@@ -13,9 +13,11 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 类似iPhone 的 UIMenuController,将自定义view以气泡包围的方式展示出来,假如设置的方向不正确则自动使用其他方向.
 
 ```
+<p>
 <img src="https://github.com/popor/PoporAlertBubbleView/blob/master/Example/image/screen0.png" width="30%" height="40%">
-
 <img src="https://github.com/popor/PoporAlertBubbleView/blob/master/Example/image/screen1.png" width="30%" height="40%">
+
+</p>
 
 ## Requirements
 
