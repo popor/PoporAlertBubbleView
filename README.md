@@ -14,8 +14,8 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ```
 <p>
-<img src="https://github.com/popor/PoporAlertBubbleView/blob/master/Example/image/screen0.png" width="30%" height="40%">
-<img src="https://github.com/popor/PoporAlertBubbleView/blob/master/Example/image/screen1.png" width="30%" height="40%">
+<img src="https://github.com/popor/PoporAlertBubbleView/blob/master/Example/image/screen0.png" width="40%" height="40%">
+<img src="https://github.com/popor/PoporAlertBubbleView/blob/master/Example/image/screen1.png" width="40%" height="40%">
 
 </p>
 
