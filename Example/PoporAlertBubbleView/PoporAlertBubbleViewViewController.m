@@ -25,7 +25,7 @@
 	
     self.bt = ({
         UIButton * button = [UIButton buttonWithType:UIButtonTypeCustom];
-        button.frame =  CGRectMake(100, 100, 80, 44);
+        button.frame =  CGRectMake(100, 200, 80, 44);
         [button setTitle:@"Tip" forState:UIControlStateNormal];
         [button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         [button setBackgroundColor:[UIColor brownColor]];
@@ -64,20 +64,27 @@
             direction = AlertBubbleViewDirectionTop;
             break;
     }
+    //direction = AlertBubbleViewDirectionRight;
     NSString * text = @"0111111110,0222222220,0333333330,0444444440,0555555550,0666666660,0777777770,0888888880,0999999990";
     NSDictionary * dic = @{
                            @"direction":@(direction),
                            @"baseView":self.view,
+                           
                            @"borderLineColor":ColorBlue1,
                            @"borderLineWidth":@(1),
                            @"corner":@(5),
+                           
                            @"trangleHeight":@(5),
                            @"trangleWidth":@(5),
-                           @"borderInnerGap":@(14),
-                           @"lableInnerGap":@(10),
+                           
+                           @"borderInnerGap":@(20),
+                           @"lableInnerGap":@(5),
                            @"bubbleBgColor":RGB16A(0XF5F8FF, 1),
+                           @"bgColor":[UIColor clearColor],
+                           
+                           // test
                            @"showAroundRect":@(NO),
-                           @"bgColor":[UIColor clearColor]
+                           @"showLogInfo":@(YES),
                            };
     
     AlertBubbleView * abView = [[AlertBubbleView alloc] initWithDic:dic];

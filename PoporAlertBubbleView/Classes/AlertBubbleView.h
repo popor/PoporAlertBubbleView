@@ -32,7 +32,6 @@
 @property (nonatomic, strong) UIColor  * bgColor;
 
 // --- 内部不可设置参数
-@property (nonatomic        ) float                    miniGap;// borderInnerGap + lableInnerGap
 @property (nonatomic        ) float                    trangleX;
 @property (nonatomic        ) float                    trangleY;
 @property (nonatomic, copy  ) BlockPVoid               closeBlock;
@@ -44,8 +43,9 @@
 
 @property (nonatomic        ) CGRect                   aroundRect;
 @property (nonatomic        ) BOOL                     showAroundRect;
+@property (nonatomic        ) BOOL                     showLogInfo;
 
-// 使用
+// 初始化
 - (id)initWithDic:(NSDictionary *)dic;
 
 /*

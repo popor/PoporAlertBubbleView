@@ -22,8 +22,9 @@
     AlertBubbleViewDirection direction = abView.direction;
 
     float trangleHeight  = abView.trangleHeight;
-    float lableInnerGap  = abView.lableInnerGap ;// lable insertEdge  gap
-    float miniGap        = abView.miniGap;// borderInnerGap + lableInnerGap
+    float lableInnerGap  = abView.lableInnerGap;// lable insertEdge  gap
+    float borderInnerGap = abView.borderInnerGap;// lable insertEdge  gap
+    //float lableInnerGap        = abView.lableInnerGap;// borderInnerGap + lableInnerGap
 
     float tX  = arroudRect.origin.x;
     float tY  = arroudRect.origin.y;
@@ -66,12 +67,12 @@
         switch (direction) {
             case AlertBubbleViewDirectionTop:
             case AlertBubbleViewDirectionBottom:{
-                if (point.x - miniGap < customView.width/2) {
+                if (point.x - lableInnerGap < customView.width/2) {
                     // 左 越界
-                    trangleX = - (point.x - miniGap);
-                }else if(abView.width - miniGap - point.x < customView.width/2){
+                    trangleX = - (point.x - lableInnerGap);
+                }else if(abView.width - lableInnerGap - point.x < customView.width/2){
                     // 右 越界
-                    trangleX = - (customView.width - (abView.width - miniGap - point.x));
+                    trangleX = - (customView.width - (abView.width - lableInnerGap - point.x));
                 }else{
                     trangleX = -customView.width/2;
                 }
@@ -87,13 +88,13 @@
             }
             case AlertBubbleViewDirectionLeft:
             case AlertBubbleViewDirectionRight:{
-                if (point.y - miniGap < customView.height/2) {
+                if (point.y - lableInnerGap < customView.height/2) {
                     // 上 越界
-                    trangleY = - (point.y - miniGap);
+                    trangleY = - (point.y - lableInnerGap);
                     
-                }else if (abView.height - miniGap - point.y < customView.height/2) {
+                }else if (abView.height - lableInnerGap - point.y < customView.height/2) {
                     // 下 越界
-                    trangleY = - (customView.height - (abView.height - miniGap - point.y));
+                    trangleY = - (customView.height - (abView.height - lableInnerGap - point.y));
                 }else{
                     trangleY = -customView.height/2;
                 }
@@ -146,11 +147,16 @@
                 break;
             }
         }
-        if (CGRectContainsRect(abView.bounds, bRect)) {
-            //NSLog(@"AlertBubbleView %@ 算对了", ABDArray[direction]);
+        CGRect checkRect = CGRectInset(bRect, -borderInnerGap, -borderInnerGap);
+        if (CGRectContainsRect(abView.bounds, checkRect)) {
+            if (abView.showLogInfo) {
+                NSLog(@"AlertBubbleView %@, 显示范围越界了, 可能是borderInnerGap过大或者其他问题.", ABDArray[direction]);
+            }
             return YES;
         }else{
-            //NSLog(@"AlertBubbleView %@ 算错了", ABDArray[direction]);
+            if (abView.showLogInfo) {
+                NSLog(@"AlertBubbleView %@, 显示范围未越界.", ABDArray[direction]);
+            }
             return NO;
         }
     };

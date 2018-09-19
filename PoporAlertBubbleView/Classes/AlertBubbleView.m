@@ -42,9 +42,6 @@
         [self.baseView addSubview:self];
         self.closeTapGR = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(closeAction:)];
         [self addGestureRecognizer:self.closeTapGR];
-        
-        // 矫正必要数据.
-        self.miniGap = self.borderInnerGap + self.lableInnerGap;
     }
     
     [self showTargetView];
