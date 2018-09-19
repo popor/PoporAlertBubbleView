@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'PoporAlertBubbleView_Example' do
+  pod 'PoporAlertBubbleView', :path => '../'
+
+  target 'PoporAlertBubbleView_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

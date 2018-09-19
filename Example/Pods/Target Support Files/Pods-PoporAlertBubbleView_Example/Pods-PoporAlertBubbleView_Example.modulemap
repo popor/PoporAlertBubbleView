@@ -1,0 +1,6 @@
+framework module Pods_PoporAlertBubbleView_Example {
+  umbrella header "Pods-PoporAlertBubbleView_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
