@@ -24,7 +24,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  PoporAlertBubbleView: 1a8211c27fb24f19648009e6f2ea23e024ebbaa8
+  PoporAlertBubbleView: 142a19e545c3b8d7b2e55be05e1a2032744145be
   PoporFoundation: 4328c1e0ae46dccec93c898b20a378354687d5ac
   PoporUI: 49ed56a58096dbe900a6fb525221d50823cd7695
 

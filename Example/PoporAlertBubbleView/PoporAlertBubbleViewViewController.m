@@ -77,7 +77,7 @@
                            @"trangleHeight":@(5),
                            @"trangleWidth":@(5),
                            
-                           @"borderInnerGap":@(20),
+                           @"borderInnerGap":@(10),
                            @"lableInnerGap":@(5),
                            @"bubbleBgColor":RGB16A(0XF5F8FF, 1),
                            @"bgColor":[UIColor clearColor],

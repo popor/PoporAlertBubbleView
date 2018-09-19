@@ -13,15 +13,20 @@
 #import <PoporFoundation/NSAssistant.h>
 #import <PoporFoundation/PrefixColor.h>
 
-@interface AlertBubbleView ()
-
-@end
-
 @implementation AlertBubbleView
 
 - (id)initWithDic:(NSDictionary *)dic {
     if (self = [super init]) {
         [NSAssistant setEntity:self dic:dic];
+        if (!self.borderLineColor) {
+            self.borderLineColor = [UIColor clearColor];
+        }
+        if (!self.bubbleBgColor) {
+            self.bubbleBgColor = [UIColor lightGrayColor];
+        }
+        if (!self.bgColor) {
+            self.bgColor = [UIColor clearColor];
+        }
     }
     return self;
 }
@@ -42,6 +47,9 @@
         [self.baseView addSubview:self];
         self.closeTapGR = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(closeAction:)];
         [self addGestureRecognizer:self.closeTapGR];
+        
+        // 矫正必要数据.
+        self.miniGap = self.borderInnerGap + self.lableInnerGap;
     }
     
     [self showTargetView];

@@ -32,6 +32,7 @@
 @property (nonatomic, strong) UIColor  * bgColor;
 
 // --- 内部不可设置参数
+@property (nonatomic        ) float                    miniGap;// borderInnerGap + lableInnerGap
 @property (nonatomic        ) float                    trangleX;
 @property (nonatomic        ) float                    trangleY;
 @property (nonatomic, copy  ) BlockPVoid               closeBlock;
