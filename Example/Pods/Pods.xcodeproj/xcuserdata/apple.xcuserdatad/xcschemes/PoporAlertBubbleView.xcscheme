@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "6F1CC9D7E3C2C55839D798424E8E9B2D"
+               BlueprintIdentifier = "66B1B5864DB3361A956CC21E862A1034"
                BlueprintName = "PoporAlertBubbleView"
                ReferencedContainer = "container:Pods.xcodeproj"
                BuildableName = "PoporAlertBubbleView.framework">

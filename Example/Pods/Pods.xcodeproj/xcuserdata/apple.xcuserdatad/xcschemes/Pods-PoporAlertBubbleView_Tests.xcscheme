@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "3FC364CB59D3F88F02844C55784F8252"
+               BlueprintIdentifier = "AA253EDC916B4C25FE9E5DBB53B5601B"
                BuildableName = "Pods_PoporAlertBubbleView_Tests.framework"
                BlueprintName = "Pods-PoporAlertBubbleView_Tests"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "3FC364CB59D3F88F02844C55784F8252"
+            BlueprintIdentifier = "AA253EDC916B4C25FE9E5DBB53B5601B"
             BuildableName = "Pods_PoporAlertBubbleView_Tests.framework"
             BlueprintName = "Pods-PoporAlertBubbleView_Tests"
             ReferencedContainer = "container:Pods.xcodeproj">

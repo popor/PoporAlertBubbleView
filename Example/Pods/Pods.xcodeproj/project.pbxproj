@@ -7,218 +7,259 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		09DB5F3D546D7E0C56031248B6023D40 /* AlertBubbleFrame.h in Headers */ = {isa = PBXBuildFile; fileRef = 529D72C4049853A7BAB1FFD498686F28 /* AlertBubbleFrame.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		11BC78BDD834A6AD9CB8609A759FD7B1 /* Pods-PoporAlertBubbleView_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E9FA33F76BA4C65C3B643ECB054EEDD /* Pods-PoporAlertBubbleView_Tests-dummy.m */; };
-		12F47FC8667C86A1C2CEB574D9F538EC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1DB44F4E2A344EA8FE77F829355169E /* UIKit.framework */; };
-		13BC7FA5258C4F418E47FBB652E2128A /* PrefixBlock.h in Headers */ = {isa = PBXBuildFile; fileRef = 87A55482731EB099D1C3E0DF39C07EEE /* PrefixBlock.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2C337F7EAFB45444D1C649115FCF6316 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BC67778D7CB0F5C12644B75A62F415F /* UIView+Extension.m */; };
-		349DBEFA6936F4D1E0F0AC8EA433DDF7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D37FD7495F4D6146A3C0D6240CD75A62 /* Foundation.framework */; };
-		42EC323D8DF539701AC9EF124362331B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D37FD7495F4D6146A3C0D6240CD75A62 /* Foundation.framework */; };
-		440CCD5A693C7C357C7B29152F26DE4D /* AlertBubbleLable.m in Sources */ = {isa = PBXBuildFile; fileRef = 4726090296A9864D1C8A1E521FDD10AC /* AlertBubbleLable.m */; };
-		453A80DC50C0D271E138557B0564F7FF /* NSAssistant.m in Sources */ = {isa = PBXBuildFile; fileRef = 320098CB3006BCA8FE2FA8447FC6C6BD /* NSAssistant.m */; };
-		4B811AF20C415C124E6C18E09DF47CB5 /* AlertBubbleBezierPath.m in Sources */ = {isa = PBXBuildFile; fileRef = ECD5FDD335696AA20474B63B44C899D7 /* AlertBubbleBezierPath.m */; };
-		54305D20AC6B4EB82D019DE7B9B8F0C9 /* NSAssistant.h in Headers */ = {isa = PBXBuildFile; fileRef = 220E1E9DDD5D8B09DB3437CCEE89E611 /* NSAssistant.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		57532DD83CB59FD086BC07BB9ECB67E3 /* AlertBubbleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 61444EDA66F79DD210C0AFAB952185C3 /* AlertBubbleView.m */; };
-		5A0B9DD9A3CFF935CFE986CBF4A42C79 /* PoporUI-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9ABA72336BE690F7DB55D4412A5573D8 /* PoporUI-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5C769FEF6FF0EA328F3DE17F4EC2100D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D37FD7495F4D6146A3C0D6240CD75A62 /* Foundation.framework */; };
-		5DE9F03E74EA11FCD7A6EE77057D289B /* PrefixFont.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D2DB9702C831A318CBD97BC9276B623 /* PrefixFont.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		61250B03F42CF418B9E992C8D455C320 /* Pods-PoporAlertBubbleView_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E984298D0D08C4D6C9BE0FB611C655AF /* Pods-PoporAlertBubbleView_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		624451EB121A4AB0593720AAE82F3953 /* PoporUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 435C6C94F5AFDE71042808513F4D1BD5 /* PoporUI.framework */; };
-		668F43297DF5BF06725F707578A91CE5 /* UIView+Tool.h in Headers */ = {isa = PBXBuildFile; fileRef = 63D09EFFF01D86277EA6D64513145E1F /* UIView+Tool.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6CFA3A01CEB043B5C1BD5177CAAAB8F7 /* AlertBubbleLable.h in Headers */ = {isa = PBXBuildFile; fileRef = 6AD943A7F0D3C0CB0F6E36E0BB19C9A8 /* AlertBubbleLable.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		703F303BF6301D30FC501FF00FB5FEA6 /* PoporUI-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 80ADE3D7DC8BD09346EFC02B804112F4 /* PoporUI-dummy.m */; };
-		7801D0EF9A8A7F19A3D40E7CEAF259EF /* AlertBubbleView.h in Headers */ = {isa = PBXBuildFile; fileRef = 6EE31124F77D94CCE8738ECF6767BE88 /* AlertBubbleView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		788122E20A09BEED0B76F3EAAAA922FE /* PoporFoundation-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E9F71A859A90494AC473C99849A246B5 /* PoporFoundation-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7E10C296B633B479816E3D658D7B7482 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D37FD7495F4D6146A3C0D6240CD75A62 /* Foundation.framework */; };
-		8738BC34D7F71D733DC146B3FBE788A7 /* AlertBubbleHead.h in Headers */ = {isa = PBXBuildFile; fileRef = EAC18D41AADF7ECD0792FBA70AABE8D9 /* AlertBubbleHead.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8ACC7544FC55EBFFBAFF66DD3C8F06BF /* UIView+Tool.m in Sources */ = {isa = PBXBuildFile; fileRef = 95236556D181E6E3AB602B38574166F1 /* UIView+Tool.m */; };
-		8C7259B0B01FCA2B3A725F159BD5FB80 /* AlertBubbleFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 5587F33067AC37ACAB72ECD3F9F108A4 /* AlertBubbleFrame.m */; };
-		8CC49A69A5723318C0F9A8FD8336AE50 /* UIView+Extension.h in Headers */ = {isa = PBXBuildFile; fileRef = 65D78FAD14D3550752A399B1AEDB4369 /* UIView+Extension.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9B77F01698B4E2EB4479F9C8CB565FEB /* PrefixOs.h in Headers */ = {isa = PBXBuildFile; fileRef = 45AD9EA91A14381F4566EEFBE4470CF8 /* PrefixOs.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A61EFD2DB4F5955B95190C6C2DF1B7A7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D37FD7495F4D6146A3C0D6240CD75A62 /* Foundation.framework */; };
-		AE0FE759C8F52399BAE4B1BFB09F5C07 /* PrefixColor.h in Headers */ = {isa = PBXBuildFile; fileRef = E873739D27673541DEDC8EDB7E180A7A /* PrefixColor.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AE1CEC4488E0BEE5AFDD81D24BDB9821 /* AlertBubbleBezierPath.h in Headers */ = {isa = PBXBuildFile; fileRef = 84F88174A19592C8A5CA4AEC9D94BF2C /* AlertBubbleBezierPath.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B951A8C7D25FA652E513ABF67AC1112D /* Pods-PoporAlertBubbleView_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 45EE2B23E38C65179D3139DE5E3E77E7 /* Pods-PoporAlertBubbleView_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C1CF7995ADB81DCA2411BE1361332BBC /* Pods-PoporAlertBubbleView_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F3234403B8F3FD48187496938E1F7BC5 /* Pods-PoporAlertBubbleView_Example-dummy.m */; };
-		C89BCDF9B4D52D3905A0341E4029140A /* PrefixFun.h in Headers */ = {isa = PBXBuildFile; fileRef = A8A5741C150B1C59DE7A8F998448509B /* PrefixFun.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CE8C7E1D3F36822A58940E7AF5B8F6B2 /* PoporAlertBubbleView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 678E985255BE0B4384094163C6394E2C /* PoporAlertBubbleView-dummy.m */; };
-		D1B03A7D3568258DFA6377B81E6A9796 /* PoporFoundation-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 358760990603F900E1A95EE78B4811BB /* PoporFoundation-dummy.m */; };
-		D9D1D608B4963194AF9B1D833094AECB /* PrefixSize.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D79D9363248DE11F10E5F588646BD8A /* PrefixSize.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F01DFED86C677828CDA270665D8D0F20 /* PoporFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5E67E9EB1B874422DEC850560939F93 /* PoporFoundation.framework */; };
-		FA8D2685E0FA2F095E29C4A3847AA492 /* PoporAlertBubbleView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 04BD029D48780A73F7ACD4E381008E17 /* PoporAlertBubbleView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0907C5D6EC40CF500C20586218FBA626 /* PoporFoundation-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2546FBD14428E327ADF80096674A6E2D /* PoporFoundation-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1EF5A2B1788C18DBDA058637CD3FA6B4 /* UIView+Tool.h in Headers */ = {isa = PBXBuildFile; fileRef = 63D09EFFF01D86277EA6D64513145E1F /* UIView+Tool.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2AF0F6E33A00ADB423E8FF1687A3248E /* PrefixFun.h in Headers */ = {isa = PBXBuildFile; fileRef = A8A5741C150B1C59DE7A8F998448509B /* PrefixFun.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2C01EBBE17AD514048A3E32B6BB1DD94 /* PrefixBlock.h in Headers */ = {isa = PBXBuildFile; fileRef = 87A55482731EB099D1C3E0DF39C07EEE /* PrefixBlock.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3408C4151CBD887353479D07EDBC79A0 /* AlertBubbleFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 5587F33067AC37ACAB72ECD3F9F108A4 /* AlertBubbleFrame.m */; };
+		3453D2BDD9EF3C8E38C3072AA77E9100 /* PoporUI-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 774C3F5F213337AC51D0D35B3ED3D81E /* PoporUI-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3A633F406A3CAD625A468AD2146126EE /* UIView+Tool.m in Sources */ = {isa = PBXBuildFile; fileRef = 95236556D181E6E3AB602B38574166F1 /* UIView+Tool.m */; };
+		3F941BD6F23ADE7CF9E0F3BBFD00F5C0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F6467C45F2C3734EFF5A0759E61BCF6 /* Foundation.framework */; };
+		433D192140890848B09126E43B9171B5 /* PoporFoundation-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D0F329053B0CDC75274C33F55C2CEA4D /* PoporFoundation-dummy.m */; };
+		474C5352E533F8766D3A43F46F9D54A1 /* PoporUI-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A045EF5D27E604B612755FC520F1530A /* PoporUI-dummy.m */; };
+		49FAA3F69FDC2607FBC8E3176811CA22 /* UIView+Extension.h in Headers */ = {isa = PBXBuildFile; fileRef = 65D78FAD14D3550752A399B1AEDB4369 /* UIView+Extension.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		523035ED135EC26DA10E1BED4888D152 /* AlertBubbleBezierPath.h in Headers */ = {isa = PBXBuildFile; fileRef = 84F88174A19592C8A5CA4AEC9D94BF2C /* AlertBubbleBezierPath.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		54BBECA279E3940D8ABA9818B25C7EF4 /* PrefixFont.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D2DB9702C831A318CBD97BC9276B623 /* PrefixFont.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5E654644C49E2ED460F391034BEF2560 /* PrefixOs.h in Headers */ = {isa = PBXBuildFile; fileRef = 45AD9EA91A14381F4566EEFBE4470CF8 /* PrefixOs.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		624111A86186CEAA3FC027C79279FEBE /* Pods-PoporAlertBubbleView_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 80ADD4FD9B43ED005C4E304080352B7A /* Pods-PoporAlertBubbleView_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		721950B18A4DB8C5C06F255AFD7DD8F7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F6467C45F2C3734EFF5A0759E61BCF6 /* Foundation.framework */; };
+		77ACFC2074E9DCF04F8A9D5F6CA6DBC7 /* AlertBubbleLable.h in Headers */ = {isa = PBXBuildFile; fileRef = 6AD943A7F0D3C0CB0F6E36E0BB19C9A8 /* AlertBubbleLable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		77FBA177C30539A49094C1CA5F2FC3EE /* PrefixSize.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D79D9363248DE11F10E5F588646BD8A /* PrefixSize.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		79823B9FA3D6BD74548CC8030C901C53 /* AlertBubbleHead.h in Headers */ = {isa = PBXBuildFile; fileRef = EAC18D41AADF7ECD0792FBA70AABE8D9 /* AlertBubbleHead.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		79BCACAE129EBF0FC6C21C8426CC17F4 /* Pods-PoporAlertBubbleView_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B3522CBEDEBBE35861E9072151D79C16 /* Pods-PoporAlertBubbleView_Tests-dummy.m */; };
+		7D5F84D48EA7F47AB36903A1368957A0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F6467C45F2C3734EFF5A0759E61BCF6 /* Foundation.framework */; };
+		85A19000E0928BFE97E1296865AD5DC7 /* PrefixColor.h in Headers */ = {isa = PBXBuildFile; fileRef = E873739D27673541DEDC8EDB7E180A7A /* PrefixColor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		894CD3E5720E5C03447F8322159CB52C /* AlertBubbleBezierPath.m in Sources */ = {isa = PBXBuildFile; fileRef = ECD5FDD335696AA20474B63B44C899D7 /* AlertBubbleBezierPath.m */; };
+		8A7A3CA929CF01E56B2B43DCD79C8C94 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5BEC9E1B4EA0632BBF6489722BCEFE4 /* UIKit.framework */; };
+		99130957B06FA0B06C9ECEF7E6EB2986 /* AlertBubbleView.h in Headers */ = {isa = PBXBuildFile; fileRef = 6EE31124F77D94CCE8738ECF6767BE88 /* AlertBubbleView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		997A475C7620583B726640B715D98ACB /* NSAssistant.h in Headers */ = {isa = PBXBuildFile; fileRef = 220E1E9DDD5D8B09DB3437CCEE89E611 /* NSAssistant.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A2959078AE1B9719BE7CFA9767EB39F0 /* PoporAlertBubbleView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B643A12168C905C674938A40EB7263BA /* PoporAlertBubbleView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A36E0996BA6570282628FCFCC126EA6A /* Pods-PoporAlertBubbleView_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 39D33A687C9C816886EBA8B2DCFDA745 /* Pods-PoporAlertBubbleView_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A38D3F05E546DBB9250A987C1E3C4622 /* AlertBubbleLable.m in Sources */ = {isa = PBXBuildFile; fileRef = 4726090296A9864D1C8A1E521FDD10AC /* AlertBubbleLable.m */; };
+		A3CAA62C8B4141263C60EA160E7A7FB1 /* PoporAlertBubbleView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD75FFCA926B44213CA6BE61163C43E /* PoporAlertBubbleView-dummy.m */; };
+		BC6B812F7D4719FF1990C45FB1BA5BC8 /* Pods-PoporAlertBubbleView_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DB317F493979B0F82E927CA87D9746E /* Pods-PoporAlertBubbleView_Example-dummy.m */; };
+		BF6912DC80ED329CBA122953658A4E02 /* PoporUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 435C6C94F5AFDE71042808513F4D1BD5 /* PoporUI.framework */; };
+		CAC196B4EA16B3F00CA0A63699C2B493 /* NSAssistant.m in Sources */ = {isa = PBXBuildFile; fileRef = 320098CB3006BCA8FE2FA8447FC6C6BD /* NSAssistant.m */; };
+		CC82032AC3CA20575056075625AAEEF5 /* PoporFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5E67E9EB1B874422DEC850560939F93 /* PoporFoundation.framework */; };
+		D396CAB842CF7F858FA486A551915731 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F6467C45F2C3734EFF5A0759E61BCF6 /* Foundation.framework */; };
+		E4EB83E4DDBEE23990E19AA625E1A239 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BC67778D7CB0F5C12644B75A62F415F /* UIView+Extension.m */; };
+		EB41B875D78619F5F0BD2921BB04EFA7 /* AlertBubbleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 61444EDA66F79DD210C0AFAB952185C3 /* AlertBubbleView.m */; };
+		F08A06A92715DEEC4701F9608B6D55AB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F6467C45F2C3734EFF5A0759E61BCF6 /* Foundation.framework */; };
+		F32060FD4A9B1BFA435DC8CA528BB92C /* AlertBubbleFrame.h in Headers */ = {isa = PBXBuildFile; fileRef = 529D72C4049853A7BAB1FFD498686F28 /* AlertBubbleFrame.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		21BFBC6649336D0EBD1F10DBF984BB90 /* PBXContainerItemProxy */ = {
+		2CE7B07E32FFF247ADEFC89F670F6EFB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 1279A272480FFFF4C4E1583C1C70AA76;
-			remoteInfo = PoporFoundation;
-		};
-		635E8EBE75452122746AF62574724698 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 395CDDA709144158FD02A7235FD13781;
-			remoteInfo = PoporUI;
-		};
-		7D312360D9D312ECE4FE4C7CBB6526C6 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 6F1CC9D7E3C2C55839D798424E8E9B2D;
+			remoteGlobalIDString = 66B1B5864DB3361A956CC21E862A1034;
 			remoteInfo = PoporAlertBubbleView;
 		};
-		9768DA7BD0DADA22A5E8A9ED24D20C7E /* PBXContainerItemProxy */ = {
+		5CC8F5AEEABEFDB383B1590CB29CC4F2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 45A42F782193A1D533BAF4B1DEDE1BC3;
+			remoteGlobalIDString = 8D96CF661B70075B017F219B74CE811F;
+			remoteInfo = PoporUI;
+		};
+		5FCDD2BFA298DFEB45B9F56F5BF585D2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 01EFE70E86E051C1EC623C10E6505592;
 			remoteInfo = "Pods-PoporAlertBubbleView_Example";
 		};
-		C152423A857C6E38233DC0B813EFD276 /* PBXContainerItemProxy */ = {
+		705C938B780C4FA1799D86ED67DD13CA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 1279A272480FFFF4C4E1583C1C70AA76;
+			remoteGlobalIDString = E5B5CE31AA4696E8E53F7EC81C929272;
 			remoteInfo = PoporFoundation;
 		};
-		E0733D3020EF68E0F34396F0CCF31738 /* PBXContainerItemProxy */ = {
+		C5C00F5C2B430A5501B5B3E3DC302857 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 395CDDA709144158FD02A7235FD13781;
+			remoteGlobalIDString = E5B5CE31AA4696E8E53F7EC81C929272;
+			remoteInfo = PoporFoundation;
+		};
+		E53ED2D2752C6039AD4FE8FC39564699 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8D96CF661B70075B017F219B74CE811F;
 			remoteInfo = PoporUI;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		04BD029D48780A73F7ACD4E381008E17 /* PoporAlertBubbleView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PoporAlertBubbleView-umbrella.h"; sourceTree = "<group>"; };
-		09F00436533F70EB3C2489CA4E4F6B62 /* PoporFoundation.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PoporFoundation.xcconfig; sourceTree = "<group>"; };
-		0E9FA33F76BA4C65C3B643ECB054EEDD /* Pods-PoporAlertBubbleView_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PoporAlertBubbleView_Tests-dummy.m"; sourceTree = "<group>"; };
-		123670A3018D414453BAA3CAF6247A60 /* Pods-PoporAlertBubbleView_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PoporAlertBubbleView_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		1246447538278D284C21B9135F80783C /* Pods-PoporAlertBubbleView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PoporAlertBubbleView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		077D2B6B28D667209443E3A15EA81DA5 /* PoporFoundation.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PoporFoundation.xcconfig; sourceTree = "<group>"; };
+		086CC5B95C0F4F623F6F0EA0A066C425 /* PoporUI.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PoporUI.xcconfig; sourceTree = "<group>"; };
+		0F6467C45F2C3734EFF5A0759E61BCF6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		1320DDA1522E80900BD80217197D6325 /* Pods-PoporAlertBubbleView_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PoporAlertBubbleView_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		144182D3E1CF70B9FA060BAA526A54BB /* PoporAlertBubbleView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PoporAlertBubbleView.framework; path = PoporAlertBubbleView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1BA3DDE22742BC3A77E6E14695842C2C /* PoporUI-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "PoporUI-Info.plist"; sourceTree = "<group>"; };
 		1D79D9363248DE11F10E5F588646BD8A /* PrefixSize.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PrefixSize.h; path = PoporFoundation/Classes/PrefixSize.h; sourceTree = "<group>"; };
+		1D8A90BAA42850593E1168F04C43BA4D /* PoporUI-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PoporUI-prefix.pch"; sourceTree = "<group>"; };
 		220E1E9DDD5D8B09DB3437CCEE89E611 /* NSAssistant.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NSAssistant.h; path = PoporFoundation/Classes/NSAssistant.h; sourceTree = "<group>"; };
-		24DD9EC038B70656CE979B4E69486F51 /* Pods-PoporAlertBubbleView_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PoporAlertBubbleView_Example-frameworks.sh"; sourceTree = "<group>"; };
-		29F796F01DFAC86218B5EC01FF416C56 /* Pods-PoporAlertBubbleView_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PoporAlertBubbleView_Example-resources.sh"; sourceTree = "<group>"; };
-		2E24DC24E23DB2B8AD5456607C98DFDF /* Pods-PoporAlertBubbleView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PoporAlertBubbleView_Example.release.xcconfig"; sourceTree = "<group>"; };
+		2546FBD14428E327ADF80096674A6E2D /* PoporFoundation-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PoporFoundation-umbrella.h"; sourceTree = "<group>"; };
+		2FFFAB4BE8BC8C08D98A1C8C2AB89457 /* Pods-PoporAlertBubbleView_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PoporAlertBubbleView_Example-frameworks.sh"; sourceTree = "<group>"; };
 		320098CB3006BCA8FE2FA8447FC6C6BD /* NSAssistant.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NSAssistant.m; path = PoporFoundation/Classes/NSAssistant.m; sourceTree = "<group>"; };
-		358760990603F900E1A95EE78B4811BB /* PoporFoundation-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PoporFoundation-dummy.m"; sourceTree = "<group>"; };
-		3B7B298C59469ECB8C83AE18A33D5E22 /* Pods-PoporAlertBubbleView_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PoporAlertBubbleView_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		39D33A687C9C816886EBA8B2DCFDA745 /* Pods-PoporAlertBubbleView_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PoporAlertBubbleView_Tests-umbrella.h"; sourceTree = "<group>"; };
 		3BC67778D7CB0F5C12644B75A62F415F /* UIView+Extension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+Extension.m"; path = "PoporUI/Classes/UIView/UIView+Extension.m"; sourceTree = "<group>"; };
 		435C6C94F5AFDE71042808513F4D1BD5 /* PoporUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PoporUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		45AD9EA91A14381F4566EEFBE4470CF8 /* PrefixOs.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PrefixOs.h; path = PoporFoundation/Classes/PrefixOs.h; sourceTree = "<group>"; };
-		45EE2B23E38C65179D3139DE5E3E77E7 /* Pods-PoporAlertBubbleView_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PoporAlertBubbleView_Tests-umbrella.h"; sourceTree = "<group>"; };
 		4726090296A9864D1C8A1E521FDD10AC /* AlertBubbleLable.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AlertBubbleLable.m; path = PoporAlertBubbleView/Classes/AlertBubbleLable.m; sourceTree = "<group>"; };
-		4A306A120C6C30392568E286C7F8E950 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		510785B4A83710497E93D36005DA32B7 /* Pods-PoporAlertBubbleView_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-PoporAlertBubbleView_Example.modulemap"; sourceTree = "<group>"; };
+		4CD75FFCA926B44213CA6BE61163C43E /* PoporAlertBubbleView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PoporAlertBubbleView-dummy.m"; sourceTree = "<group>"; };
 		529D72C4049853A7BAB1FFD498686F28 /* AlertBubbleFrame.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AlertBubbleFrame.h; path = PoporAlertBubbleView/Classes/AlertBubbleFrame.h; sourceTree = "<group>"; };
-		5476BA1D70EE4A03780BF61DCD055E7B /* PoporAlertBubbleView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PoporAlertBubbleView.xcconfig; sourceTree = "<group>"; };
 		5587F33067AC37ACAB72ECD3F9F108A4 /* AlertBubbleFrame.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AlertBubbleFrame.m; path = PoporAlertBubbleView/Classes/AlertBubbleFrame.m; sourceTree = "<group>"; };
+		56483A0C2B6999FE3C46EEC91A0C85F7 /* Pods-PoporAlertBubbleView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PoporAlertBubbleView_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		57404CBC905152301DEDA8652416F6EA /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		579F8C7E9878ABFCA4A774B52B46EAF7 /* PoporUI.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = PoporUI.modulemap; sourceTree = "<group>"; };
 		61444EDA66F79DD210C0AFAB952185C3 /* AlertBubbleView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AlertBubbleView.m; path = PoporAlertBubbleView/Classes/AlertBubbleView.m; sourceTree = "<group>"; };
 		63D09EFFF01D86277EA6D64513145E1F /* UIView+Tool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+Tool.h"; path = "PoporUI/Classes/UIView/UIView+Tool.h"; sourceTree = "<group>"; };
+		65BFD01D654E3642B21FC570428080CF /* PoporAlertBubbleView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = PoporAlertBubbleView.modulemap; sourceTree = "<group>"; };
 		65D78FAD14D3550752A399B1AEDB4369 /* UIView+Extension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+Extension.h"; path = "PoporUI/Classes/UIView/UIView+Extension.h"; sourceTree = "<group>"; };
-		678E985255BE0B4384094163C6394E2C /* PoporAlertBubbleView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PoporAlertBubbleView-dummy.m"; sourceTree = "<group>"; };
 		6AD943A7F0D3C0CB0F6E36E0BB19C9A8 /* AlertBubbleLable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AlertBubbleLable.h; path = PoporAlertBubbleView/Classes/AlertBubbleLable.h; sourceTree = "<group>"; };
-		6BE6094F7670EB580C1B87D238056846 /* PoporAlertBubbleView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = PoporAlertBubbleView.modulemap; sourceTree = "<group>"; };
-		6CDC1DE38E794306A86BB4362AFC86A9 /* Pods-PoporAlertBubbleView_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-PoporAlertBubbleView_Tests.modulemap"; sourceTree = "<group>"; };
 		6D2DB9702C831A318CBD97BC9276B623 /* PrefixFont.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PrefixFont.h; path = PoporFoundation/Classes/PrefixFont.h; sourceTree = "<group>"; };
-		6DC24FE68639B5808365C3834971C1CB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6E4A7CE88C0DC0DA7ED52301A08497CB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6DB317F493979B0F82E927CA87D9746E /* Pods-PoporAlertBubbleView_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PoporAlertBubbleView_Example-dummy.m"; sourceTree = "<group>"; };
 		6EE31124F77D94CCE8738ECF6767BE88 /* AlertBubbleView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AlertBubbleView.h; path = PoporAlertBubbleView/Classes/AlertBubbleView.h; sourceTree = "<group>"; };
-		7791F00F8402109E26552C7D23AC9F9F /* PoporFoundation.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = PoporFoundation.modulemap; sourceTree = "<group>"; };
-		7B3FB536C4A0699B6F50F58530A0267C /* PoporFoundation-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PoporFoundation-prefix.pch"; sourceTree = "<group>"; };
+		731E42CE7D10EBD9FE01E2E8CAF0BC95 /* Pods-PoporAlertBubbleView_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PoporAlertBubbleView_Example-Info.plist"; sourceTree = "<group>"; };
+		774C3F5F213337AC51D0D35B3ED3D81E /* PoporUI-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PoporUI-umbrella.h"; sourceTree = "<group>"; };
 		7CBF9BAD1404069906C806F9267CAA69 /* PoporAlertBubbleView.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = PoporAlertBubbleView.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		80ADE3D7DC8BD09346EFC02B804112F4 /* PoporUI-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PoporUI-dummy.m"; sourceTree = "<group>"; };
-		83E79045F7B8D35239ED62614A52A6BF /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7F147B793F052861711C2C6D34E7DBBF /* Pods-PoporAlertBubbleView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PoporAlertBubbleView_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		80ADD4FD9B43ED005C4E304080352B7A /* Pods-PoporAlertBubbleView_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PoporAlertBubbleView_Example-umbrella.h"; sourceTree = "<group>"; };
+		837ADE0DDB1D2F30EB70DE097473FDBD /* PoporAlertBubbleView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PoporAlertBubbleView-prefix.pch"; sourceTree = "<group>"; };
 		84F88174A19592C8A5CA4AEC9D94BF2C /* AlertBubbleBezierPath.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AlertBubbleBezierPath.h; path = PoporAlertBubbleView/Classes/AlertBubbleBezierPath.h; sourceTree = "<group>"; };
 		87A55482731EB099D1C3E0DF39C07EEE /* PrefixBlock.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PrefixBlock.h; path = PoporFoundation/Classes/PrefixBlock.h; sourceTree = "<group>"; };
-		928AC3969E4DEA7FEABB937310350D4E /* Pods-PoporAlertBubbleView_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PoporAlertBubbleView_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		8943004C02E41850B093D0D856C2D453 /* Pods-PoporAlertBubbleView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PoporAlertBubbleView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		94FD3DC47ACFA26CA40A469A20DBF26D /* PoporUI.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PoporUI.xcconfig; sourceTree = "<group>"; };
 		95236556D181E6E3AB602B38574166F1 /* UIView+Tool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+Tool.m"; path = "PoporUI/Classes/UIView/UIView+Tool.m"; sourceTree = "<group>"; };
-		9ABA72336BE690F7DB55D4412A5573D8 /* PoporUI-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PoporUI-umbrella.h"; sourceTree = "<group>"; };
-		9F0BB4F53D4E58FC212F3A33486CBDD0 /* Pods-PoporAlertBubbleView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PoporAlertBubbleView_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		A1307FB7841195233EDC6041C3278AA4 /* Pods-PoporAlertBubbleView_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PoporAlertBubbleView_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		A4334C8400A5CF9B3B53A9FAFD3E8F32 /* Pods-PoporAlertBubbleView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PoporAlertBubbleView_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		A045EF5D27E604B612755FC520F1530A /* PoporUI-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PoporUI-dummy.m"; sourceTree = "<group>"; };
+		A4F6733250FB6FD7D534381085E4AF10 /* PoporAlertBubbleView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PoporAlertBubbleView.xcconfig; sourceTree = "<group>"; };
 		A51403E973B325D862223C95C9DF4FD0 /* PoporFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PoporFoundation.framework; path = PoporFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8A5741C150B1C59DE7A8F998448509B /* PrefixFun.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PrefixFun.h; path = PoporFoundation/Classes/PrefixFun.h; sourceTree = "<group>"; };
-		AF46C25CBF3AF840BDB3D69406E3FB99 /* PoporUI.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = PoporUI.modulemap; sourceTree = "<group>"; };
-		B153118930F24AD3C826975A95060254 /* Pods-PoporAlertBubbleView_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PoporAlertBubbleView_Tests-resources.sh"; sourceTree = "<group>"; };
-		B1DB44F4E2A344EA8FE77F829355169E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		B4AAE1D5BCAA4719A228AB9E82017516 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A98F1A825CD26AE22C6814FFF18CBCE1 /* Pods-PoporAlertBubbleView_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PoporAlertBubbleView_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		AD4D8847DD0B2074C1F2FE761AE1FF5B /* Pods-PoporAlertBubbleView_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-PoporAlertBubbleView_Tests.modulemap"; sourceTree = "<group>"; };
+		B0A27DCCCA1FFBE0E7E379B2D7655FA6 /* Pods-PoporAlertBubbleView_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PoporAlertBubbleView_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		B3522CBEDEBBE35861E9072151D79C16 /* Pods-PoporAlertBubbleView_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PoporAlertBubbleView_Tests-dummy.m"; sourceTree = "<group>"; };
+		B60426AD5449883A717419EB31C3204F /* Pods-PoporAlertBubbleView_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PoporAlertBubbleView_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		B643A12168C905C674938A40EB7263BA /* PoporAlertBubbleView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PoporAlertBubbleView-umbrella.h"; sourceTree = "<group>"; };
+		B8D791B48E71002ACFE72B950D0C2275 /* Pods-PoporAlertBubbleView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PoporAlertBubbleView_Example.release.xcconfig"; sourceTree = "<group>"; };
+		BC10F981A31E49159C7854B7ACE49FFA /* PoporFoundation-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PoporFoundation-prefix.pch"; sourceTree = "<group>"; };
 		C4D71B51DF5943BECB9B37B056BD45CA /* Pods_PoporAlertBubbleView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_PoporAlertBubbleView_Example.framework; path = "Pods-PoporAlertBubbleView_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD1C36595D3FCC64E4DFEC9A37C9C9BF /* PoporUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PoporUI.framework; path = PoporUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D086612BEF9CC0BAA28817121CEB81F9 /* PoporAlertBubbleView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PoporAlertBubbleView-prefix.pch"; sourceTree = "<group>"; };
-		D37FD7495F4D6146A3C0D6240CD75A62 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D0F329053B0CDC75274C33F55C2CEA4D /* PoporFoundation-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PoporFoundation-dummy.m"; sourceTree = "<group>"; };
+		D5BEC9E1B4EA0632BBF6489722BCEFE4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		D622C55314DF65201CFF5A8F5B843F8A /* PoporAlertBubbleView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "PoporAlertBubbleView-Info.plist"; sourceTree = "<group>"; };
 		D813E92ECC787ADD2F650A8ACB2FDFB9 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		DA5988302B9A45D680325FAC817A0187 /* Pods-PoporAlertBubbleView_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PoporAlertBubbleView_Tests-Info.plist"; sourceTree = "<group>"; };
 		DE9CE6C8F1ABDA8E60D6939A5E4254F9 /* Pods_PoporAlertBubbleView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_PoporAlertBubbleView_Tests.framework; path = "Pods-PoporAlertBubbleView_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1DC907659188BD2D31964B78499BABE /* Pods-PoporAlertBubbleView_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-PoporAlertBubbleView_Example.modulemap"; sourceTree = "<group>"; };
+		E28D49F868D12C3D9F473E1F5C4316D3 /* PoporFoundation.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = PoporFoundation.modulemap; sourceTree = "<group>"; };
 		E5E67E9EB1B874422DEC850560939F93 /* PoporFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PoporFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E873739D27673541DEDC8EDB7E180A7A /* PrefixColor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PrefixColor.h; path = PoporFoundation/Classes/PrefixColor.h; sourceTree = "<group>"; };
-		E88C146CE4C35156A2229ED53834DC28 /* Pods-PoporAlertBubbleView_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PoporAlertBubbleView_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		E984298D0D08C4D6C9BE0FB611C655AF /* Pods-PoporAlertBubbleView_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PoporAlertBubbleView_Example-umbrella.h"; sourceTree = "<group>"; };
-		E9F71A859A90494AC473C99849A246B5 /* PoporFoundation-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PoporFoundation-umbrella.h"; sourceTree = "<group>"; };
 		EAC18D41AADF7ECD0792FBA70AABE8D9 /* AlertBubbleHead.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AlertBubbleHead.h; path = PoporAlertBubbleView/Classes/AlertBubbleHead.h; sourceTree = "<group>"; };
-		EBB5C209D344BF4933F53DF671621DF8 /* PoporUI-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PoporUI-prefix.pch"; sourceTree = "<group>"; };
 		ECD5FDD335696AA20474B63B44C899D7 /* AlertBubbleBezierPath.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AlertBubbleBezierPath.m; path = PoporAlertBubbleView/Classes/AlertBubbleBezierPath.m; sourceTree = "<group>"; };
-		F3234403B8F3FD48187496938E1F7BC5 /* Pods-PoporAlertBubbleView_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PoporAlertBubbleView_Example-dummy.m"; sourceTree = "<group>"; };
+		F3B666A3E1A3D2EA6AF9681F36EAFE5A /* PoporFoundation-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "PoporFoundation-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		1412D7B293A5625028284F4037AAEBD0 /* Frameworks */ = {
+		2347BC0EB09464A6B705E5336DC9C37D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				349DBEFA6936F4D1E0F0AC8EA433DDF7 /* Foundation.framework in Frameworks */,
-				12F47FC8667C86A1C2CEB574D9F538EC /* UIKit.framework in Frameworks */,
+				D396CAB842CF7F858FA486A551915731 /* Foundation.framework in Frameworks */,
+				8A7A3CA929CF01E56B2B43DCD79C8C94 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		73B7A3248E0113023E58400B9B9DD43B /* Frameworks */ = {
+		748F7C093E2DFB46EE9DD3169F99BF21 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A61EFD2DB4F5955B95190C6C2DF1B7A7 /* Foundation.framework in Frameworks */,
+				3F941BD6F23ADE7CF9E0F3BBFD00F5C0 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9D82A6F2000ACCB534668C3484E46F7F /* Frameworks */ = {
+		9A79EF98AB9CCB76D5E2DF5DFF64178B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7E10C296B633B479816E3D658D7B7482 /* Foundation.framework in Frameworks */,
-				F01DFED86C677828CDA270665D8D0F20 /* PoporFoundation.framework in Frameworks */,
-				624451EB121A4AB0593720AAE82F3953 /* PoporUI.framework in Frameworks */,
+				7D5F84D48EA7F47AB36903A1368957A0 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DD7CD7C4DA641696B6924DD3B8F27CBA /* Frameworks */ = {
+		E6FC150249E0625291C10EF7FDC7B116 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5C769FEF6FF0EA328F3DE17F4EC2100D /* Foundation.framework in Frameworks */,
+				721950B18A4DB8C5C06F255AFD7DD8F7 /* Foundation.framework in Frameworks */,
+				CC82032AC3CA20575056075625AAEEF5 /* PoporFoundation.framework in Frameworks */,
+				BF6912DC80ED329CBA122953658A4E02 /* PoporUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FEFF339A4198EA13C00CEE0DCFE901BF /* Frameworks */ = {
+		EDBD1D09FB55A8C395A0EDF8231F2162 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				42EC323D8DF539701AC9EF124362331B /* Foundation.framework in Frameworks */,
+				F08A06A92715DEEC4701F9608B6D55AB /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		07C21D47AED65169E395A91A14BCAEEB /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				579F8C7E9878ABFCA4A774B52B46EAF7 /* PoporUI.modulemap */,
+				086CC5B95C0F4F623F6F0EA0A066C425 /* PoporUI.xcconfig */,
+				A045EF5D27E604B612755FC520F1530A /* PoporUI-dummy.m */,
+				1BA3DDE22742BC3A77E6E14695842C2C /* PoporUI-Info.plist */,
+				1D8A90BAA42850593E1168F04C43BA4D /* PoporUI-prefix.pch */,
+				774C3F5F213337AC51D0D35B3ED3D81E /* PoporUI-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/PoporUI";
+			sourceTree = "<group>";
+		};
+		099BD2E186833642A5CD5F984FB68989 /* Pods-PoporAlertBubbleView_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				AD4D8847DD0B2074C1F2FE761AE1FF5B /* Pods-PoporAlertBubbleView_Tests.modulemap */,
+				B0A27DCCCA1FFBE0E7E379B2D7655FA6 /* Pods-PoporAlertBubbleView_Tests-acknowledgements.markdown */,
+				1320DDA1522E80900BD80217197D6325 /* Pods-PoporAlertBubbleView_Tests-acknowledgements.plist */,
+				B3522CBEDEBBE35861E9072151D79C16 /* Pods-PoporAlertBubbleView_Tests-dummy.m */,
+				DA5988302B9A45D680325FAC817A0187 /* Pods-PoporAlertBubbleView_Tests-Info.plist */,
+				39D33A687C9C816886EBA8B2DCFDA745 /* Pods-PoporAlertBubbleView_Tests-umbrella.h */,
+				8943004C02E41850B093D0D856C2D453 /* Pods-PoporAlertBubbleView_Tests.debug.xcconfig */,
+				56483A0C2B6999FE3C46EEC91A0C85F7 /* Pods-PoporAlertBubbleView_Tests.release.xcconfig */,
+			);
+			name = "Pods-PoporAlertBubbleView_Tests";
+			path = "Target Support Files/Pods-PoporAlertBubbleView_Tests";
+			sourceTree = "<group>";
+		};
+		13426E3EAC70C67E38AD2003D88153BF /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				65BFD01D654E3642B21FC570428080CF /* PoporAlertBubbleView.modulemap */,
+				A4F6733250FB6FD7D534381085E4AF10 /* PoporAlertBubbleView.xcconfig */,
+				4CD75FFCA926B44213CA6BE61163C43E /* PoporAlertBubbleView-dummy.m */,
+				D622C55314DF65201CFF5A8F5B843F8A /* PoporAlertBubbleView-Info.plist */,
+				837ADE0DDB1D2F30EB70DE097473FDBD /* PoporAlertBubbleView-prefix.pch */,
+				B643A12168C905C674938A40EB7263BA /* PoporAlertBubbleView-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/PoporAlertBubbleView";
+			sourceTree = "<group>";
+		};
 		208955097648BF104DF549F1FFC01F20 /* PoporUI */ = {
 			isa = PBXGroup;
 			children = (
-				853F66C044156DC147B75DEF64BFB5A1 /* Support Files */,
+				07C21D47AED65169E395A91A14BCAEEB /* Support Files */,
 				F748C7CB20EE75DFC96FE288B798E2DE /* UIView */,
 			);
 			name = PoporUI;
@@ -238,7 +279,7 @@
 			children = (
 				E5E67E9EB1B874422DEC850560939F93 /* PoporFoundation.framework */,
 				435C6C94F5AFDE71042808513F4D1BD5 /* PoporUI.framework */,
-				91ACB9648DC1D62C6096E3D0C73BB65B /* iOS */,
+				8EF57BD78DA44DBC9809DE568723E95C /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -251,6 +292,32 @@
 			name = PrefixOs;
 			sourceTree = "<group>";
 		};
+		73D6D1D47E7FB1AAAC5BE1325F3DC61B /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				76ABA2D0A48C12C99029EF91C8B49311 /* Pods-PoporAlertBubbleView_Example */,
+				099BD2E186833642A5CD5F984FB68989 /* Pods-PoporAlertBubbleView_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		76ABA2D0A48C12C99029EF91C8B49311 /* Pods-PoporAlertBubbleView_Example */ = {
+			isa = PBXGroup;
+			children = (
+				E1DC907659188BD2D31964B78499BABE /* Pods-PoporAlertBubbleView_Example.modulemap */,
+				A98F1A825CD26AE22C6814FFF18CBCE1 /* Pods-PoporAlertBubbleView_Example-acknowledgements.markdown */,
+				B60426AD5449883A717419EB31C3204F /* Pods-PoporAlertBubbleView_Example-acknowledgements.plist */,
+				6DB317F493979B0F82E927CA87D9746E /* Pods-PoporAlertBubbleView_Example-dummy.m */,
+				2FFFAB4BE8BC8C08D98A1C8C2AB89457 /* Pods-PoporAlertBubbleView_Example-frameworks.sh */,
+				731E42CE7D10EBD9FE01E2E8CAF0BC95 /* Pods-PoporAlertBubbleView_Example-Info.plist */,
+				80ADD4FD9B43ED005C4E304080352B7A /* Pods-PoporAlertBubbleView_Example-umbrella.h */,
+				7F147B793F052861711C2C6D34E7DBBF /* Pods-PoporAlertBubbleView_Example.debug.xcconfig */,
+				B8D791B48E71002ACFE72B950D0C2275 /* Pods-PoporAlertBubbleView_Example.release.xcconfig */,
+			);
+			name = "Pods-PoporAlertBubbleView_Example";
+			path = "Target Support Files/Pods-PoporAlertBubbleView_Example";
+			sourceTree = "<group>";
+		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
@@ -259,40 +326,17 @@
 				43D6D4943ECA2A8DED5B5797BCB3A855 /* Frameworks */,
 				FC62182C034F3AC1988FF4C8B0E3155F /* Pods */,
 				E8D99B70629BA4FF9C8D80C865045E1E /* Products */,
-				EF9FC87CAC4655BA2496E7481FE38712 /* Targets Support Files */,
+				73D6D1D47E7FB1AAAC5BE1325F3DC61B /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		853F66C044156DC147B75DEF64BFB5A1 /* Support Files */ = {
+		8EF57BD78DA44DBC9809DE568723E95C /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				6DC24FE68639B5808365C3834971C1CB /* Info.plist */,
-				AF46C25CBF3AF840BDB3D69406E3FB99 /* PoporUI.modulemap */,
-				94FD3DC47ACFA26CA40A469A20DBF26D /* PoporUI.xcconfig */,
-				80ADE3D7DC8BD09346EFC02B804112F4 /* PoporUI-dummy.m */,
-				EBB5C209D344BF4933F53DF671621DF8 /* PoporUI-prefix.pch */,
-				9ABA72336BE690F7DB55D4412A5573D8 /* PoporUI-umbrella.h */,
+				0F6467C45F2C3734EFF5A0759E61BCF6 /* Foundation.framework */,
+				D5BEC9E1B4EA0632BBF6489722BCEFE4 /* UIKit.framework */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/PoporUI";
-			sourceTree = "<group>";
-		};
-		8A26B962CD649F558B407B97F87E0524 /* Pods-PoporAlertBubbleView_Tests */ = {
-			isa = PBXGroup;
-			children = (
-				B4AAE1D5BCAA4719A228AB9E82017516 /* Info.plist */,
-				6CDC1DE38E794306A86BB4362AFC86A9 /* Pods-PoporAlertBubbleView_Tests.modulemap */,
-				A1307FB7841195233EDC6041C3278AA4 /* Pods-PoporAlertBubbleView_Tests-acknowledgements.markdown */,
-				E88C146CE4C35156A2229ED53834DC28 /* Pods-PoporAlertBubbleView_Tests-acknowledgements.plist */,
-				0E9FA33F76BA4C65C3B643ECB054EEDD /* Pods-PoporAlertBubbleView_Tests-dummy.m */,
-				123670A3018D414453BAA3CAF6247A60 /* Pods-PoporAlertBubbleView_Tests-frameworks.sh */,
-				B153118930F24AD3C826975A95060254 /* Pods-PoporAlertBubbleView_Tests-resources.sh */,
-				45EE2B23E38C65179D3139DE5E3E77E7 /* Pods-PoporAlertBubbleView_Tests-umbrella.h */,
-				1246447538278D284C21B9135F80783C /* Pods-PoporAlertBubbleView_Tests.debug.xcconfig */,
-				9F0BB4F53D4E58FC212F3A33486CBDD0 /* Pods-PoporAlertBubbleView_Tests.release.xcconfig */,
-			);
-			name = "Pods-PoporAlertBubbleView_Tests";
-			path = "Target Support Files/Pods-PoporAlertBubbleView_Tests";
+			name = iOS;
 			sourceTree = "<group>";
 		};
 		8FB4E84439A7039549FCD57CD70CE4AE /* NSAssistant */ = {
@@ -304,43 +348,16 @@
 			name = NSAssistant;
 			sourceTree = "<group>";
 		};
-		91ACB9648DC1D62C6096E3D0C73BB65B /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				D37FD7495F4D6146A3C0D6240CD75A62 /* Foundation.framework */,
-				B1DB44F4E2A344EA8FE77F829355169E /* UIKit.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
 		A8C03AA2E2BD8D0EE36B44128F6A6417 /* PoporFoundation */ = {
 			isa = PBXGroup;
 			children = (
 				8FB4E84439A7039549FCD57CD70CE4AE /* NSAssistant */,
 				DA6579F48C5DF109869EB5016626FAB3 /* PrefixCore */,
 				4E230E281301C2BA86B0DE4FB69B6062 /* PrefixOs */,
-				F61CD79978DE5EA3526B308E76409FEC /* Support Files */,
+				C983C9E85693F40F0042DC00EBFD2EC7 /* Support Files */,
 			);
 			name = PoporFoundation;
 			path = PoporFoundation;
-			sourceTree = "<group>";
-		};
-		AF7E21374B94016B6E31219029C1BCA0 /* Pods-PoporAlertBubbleView_Example */ = {
-			isa = PBXGroup;
-			children = (
-				83E79045F7B8D35239ED62614A52A6BF /* Info.plist */,
-				510785B4A83710497E93D36005DA32B7 /* Pods-PoporAlertBubbleView_Example.modulemap */,
-				928AC3969E4DEA7FEABB937310350D4E /* Pods-PoporAlertBubbleView_Example-acknowledgements.markdown */,
-				3B7B298C59469ECB8C83AE18A33D5E22 /* Pods-PoporAlertBubbleView_Example-acknowledgements.plist */,
-				F3234403B8F3FD48187496938E1F7BC5 /* Pods-PoporAlertBubbleView_Example-dummy.m */,
-				24DD9EC038B70656CE979B4E69486F51 /* Pods-PoporAlertBubbleView_Example-frameworks.sh */,
-				29F796F01DFAC86218B5EC01FF416C56 /* Pods-PoporAlertBubbleView_Example-resources.sh */,
-				E984298D0D08C4D6C9BE0FB611C655AF /* Pods-PoporAlertBubbleView_Example-umbrella.h */,
-				A4334C8400A5CF9B3B53A9FAFD3E8F32 /* Pods-PoporAlertBubbleView_Example.debug.xcconfig */,
-				2E24DC24E23DB2B8AD5456607C98DFDF /* Pods-PoporAlertBubbleView_Example.release.xcconfig */,
-			);
-			name = "Pods-PoporAlertBubbleView_Example";
-			path = "Target Support Files/Pods-PoporAlertBubbleView_Example";
 			sourceTree = "<group>";
 		};
 		AFB3E85F3C7F963BF71261D29CAC41DC /* PoporAlertBubbleView */ = {
@@ -356,10 +373,24 @@
 				6EE31124F77D94CCE8738ECF6767BE88 /* AlertBubbleView.h */,
 				61444EDA66F79DD210C0AFAB952185C3 /* AlertBubbleView.m */,
 				F67A0FDBFB486C6987606E48F793688A /* Pod */,
-				E0AC722C1496D61A54E3C2F3A486D809 /* Support Files */,
+				13426E3EAC70C67E38AD2003D88153BF /* Support Files */,
 			);
 			name = PoporAlertBubbleView;
 			path = ../..;
+			sourceTree = "<group>";
+		};
+		C983C9E85693F40F0042DC00EBFD2EC7 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E28D49F868D12C3D9F473E1F5C4316D3 /* PoporFoundation.modulemap */,
+				077D2B6B28D667209443E3A15EA81DA5 /* PoporFoundation.xcconfig */,
+				D0F329053B0CDC75274C33F55C2CEA4D /* PoporFoundation-dummy.m */,
+				F3B666A3E1A3D2EA6AF9681F36EAFE5A /* PoporFoundation-Info.plist */,
+				BC10F981A31E49159C7854B7ACE49FFA /* PoporFoundation-prefix.pch */,
+				2546FBD14428E327ADF80096674A6E2D /* PoporFoundation-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/PoporFoundation";
 			sourceTree = "<group>";
 		};
 		DA6579F48C5DF109869EB5016626FAB3 /* PrefixCore */ = {
@@ -374,20 +405,6 @@
 			name = PrefixCore;
 			sourceTree = "<group>";
 		};
-		E0AC722C1496D61A54E3C2F3A486D809 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				6E4A7CE88C0DC0DA7ED52301A08497CB /* Info.plist */,
-				6BE6094F7670EB580C1B87D238056846 /* PoporAlertBubbleView.modulemap */,
-				5476BA1D70EE4A03780BF61DCD055E7B /* PoporAlertBubbleView.xcconfig */,
-				678E985255BE0B4384094163C6394E2C /* PoporAlertBubbleView-dummy.m */,
-				D086612BEF9CC0BAA28817121CEB81F9 /* PoporAlertBubbleView-prefix.pch */,
-				04BD029D48780A73F7ACD4E381008E17 /* PoporAlertBubbleView-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/PoporAlertBubbleView";
-			sourceTree = "<group>";
-		};
 		E8D99B70629BA4FF9C8D80C865045E1E /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -398,29 +415,6 @@
 				CD1C36595D3FCC64E4DFEC9A37C9C9BF /* PoporUI.framework */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		EF9FC87CAC4655BA2496E7481FE38712 /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				AF7E21374B94016B6E31219029C1BCA0 /* Pods-PoporAlertBubbleView_Example */,
-				8A26B962CD649F558B407B97F87E0524 /* Pods-PoporAlertBubbleView_Tests */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		F61CD79978DE5EA3526B308E76409FEC /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				4A306A120C6C30392568E286C7F8E950 /* Info.plist */,
-				7791F00F8402109E26552C7D23AC9F9F /* PoporFoundation.modulemap */,
-				09F00436533F70EB3C2489CA4E4F6B62 /* PoporFoundation.xcconfig */,
-				358760990603F900E1A95EE78B4811BB /* PoporFoundation-dummy.m */,
-				7B3FB536C4A0699B6F50F58530A0267C /* PoporFoundation-prefix.pch */,
-				E9F71A859A90494AC473C99849A246B5 /* PoporFoundation-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/PoporFoundation";
 			sourceTree = "<group>";
 		};
 		F67A0FDBFB486C6987606E48F793688A /* Pod */ = {
@@ -456,87 +450,112 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		02E5D0C4A6E6E7A970B34E1D8F26C309 /* Headers */ = {
+		06EC3ECD7F804DB8B30E7DD6B3E5ED88 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE1CEC4488E0BEE5AFDD81D24BDB9821 /* AlertBubbleBezierPath.h in Headers */,
-				09DB5F3D546D7E0C56031248B6023D40 /* AlertBubbleFrame.h in Headers */,
-				8738BC34D7F71D733DC146B3FBE788A7 /* AlertBubbleHead.h in Headers */,
-				6CFA3A01CEB043B5C1BD5177CAAAB8F7 /* AlertBubbleLable.h in Headers */,
-				7801D0EF9A8A7F19A3D40E7CEAF259EF /* AlertBubbleView.h in Headers */,
-				FA8D2685E0FA2F095E29C4A3847AA492 /* PoporAlertBubbleView-umbrella.h in Headers */,
+				624111A86186CEAA3FC027C79279FEBE /* Pods-PoporAlertBubbleView_Example-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1CB574CA584140511766154DFB533F05 /* Headers */ = {
+		0F2CC9576A96DF042BD90ED640EC049F /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B951A8C7D25FA652E513ABF67AC1112D /* Pods-PoporAlertBubbleView_Tests-umbrella.h in Headers */,
+				997A475C7620583B726640B715D98ACB /* NSAssistant.h in Headers */,
+				0907C5D6EC40CF500C20586218FBA626 /* PoporFoundation-umbrella.h in Headers */,
+				2C01EBBE17AD514048A3E32B6BB1DD94 /* PrefixBlock.h in Headers */,
+				85A19000E0928BFE97E1296865AD5DC7 /* PrefixColor.h in Headers */,
+				54BBECA279E3940D8ABA9818B25C7EF4 /* PrefixFont.h in Headers */,
+				2AF0F6E33A00ADB423E8FF1687A3248E /* PrefixFun.h in Headers */,
+				5E654644C49E2ED460F391034BEF2560 /* PrefixOs.h in Headers */,
+				77FBA177C30539A49094C1CA5F2FC3EE /* PrefixSize.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		37AD526CD644A972F8FB5F24BD902FDD /* Headers */ = {
+		B3C8732CD998BF5E4B2948E8A0940EDD /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				54305D20AC6B4EB82D019DE7B9B8F0C9 /* NSAssistant.h in Headers */,
-				788122E20A09BEED0B76F3EAAAA922FE /* PoporFoundation-umbrella.h in Headers */,
-				13BC7FA5258C4F418E47FBB652E2128A /* PrefixBlock.h in Headers */,
-				AE0FE759C8F52399BAE4B1BFB09F5C07 /* PrefixColor.h in Headers */,
-				5DE9F03E74EA11FCD7A6EE77057D289B /* PrefixFont.h in Headers */,
-				C89BCDF9B4D52D3905A0341E4029140A /* PrefixFun.h in Headers */,
-				9B77F01698B4E2EB4479F9C8CB565FEB /* PrefixOs.h in Headers */,
-				D9D1D608B4963194AF9B1D833094AECB /* PrefixSize.h in Headers */,
+				3453D2BDD9EF3C8E38C3072AA77E9100 /* PoporUI-umbrella.h in Headers */,
+				49FAA3F69FDC2607FBC8E3176811CA22 /* UIView+Extension.h in Headers */,
+				1EF5A2B1788C18DBDA058637CD3FA6B4 /* UIView+Tool.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F9971B55E8C597FB27EF0CC5BEF2E4EF /* Headers */ = {
+		BB7E6540A25CDB1A6373E6F3316D2EC3 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				61250B03F42CF418B9E992C8D455C320 /* Pods-PoporAlertBubbleView_Example-umbrella.h in Headers */,
+				A36E0996BA6570282628FCFCC126EA6A /* Pods-PoporAlertBubbleView_Tests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FD7A007E66D76AE31BCCEE133D8F1A6C /* Headers */ = {
+		BFFDB5FF90756F62CB7A95C0E8A0871A /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5A0B9DD9A3CFF935CFE986CBF4A42C79 /* PoporUI-umbrella.h in Headers */,
-				8CC49A69A5723318C0F9A8FD8336AE50 /* UIView+Extension.h in Headers */,
-				668F43297DF5BF06725F707578A91CE5 /* UIView+Tool.h in Headers */,
+				523035ED135EC26DA10E1BED4888D152 /* AlertBubbleBezierPath.h in Headers */,
+				F32060FD4A9B1BFA435DC8CA528BB92C /* AlertBubbleFrame.h in Headers */,
+				79823B9FA3D6BD74548CC8030C901C53 /* AlertBubbleHead.h in Headers */,
+				77ACFC2074E9DCF04F8A9D5F6CA6DBC7 /* AlertBubbleLable.h in Headers */,
+				99130957B06FA0B06C9ECEF7E6EB2986 /* AlertBubbleView.h in Headers */,
+				A2959078AE1B9719BE7CFA9767EB39F0 /* PoporAlertBubbleView-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		1279A272480FFFF4C4E1583C1C70AA76 /* PoporFoundation */ = {
+		01EFE70E86E051C1EC623C10E6505592 /* Pods-PoporAlertBubbleView_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4A19E97DCF9F9968B5AD617928B26A20 /* Build configuration list for PBXNativeTarget "PoporFoundation" */;
+			buildConfigurationList = 369F1124B5005E65AB5EC2A5A44C49C8 /* Build configuration list for PBXNativeTarget "Pods-PoporAlertBubbleView_Example" */;
 			buildPhases = (
-				48C46AE497FD87D147858735286EA4B4 /* Sources */,
-				1412D7B293A5625028284F4037AAEBD0 /* Frameworks */,
-				37AD526CD644A972F8FB5F24BD902FDD /* Headers */,
+				06EC3ECD7F804DB8B30E7DD6B3E5ED88 /* Headers */,
+				086DB73874CE8F1BEFB6AD25C6CAE2F0 /* Sources */,
+				9A79EF98AB9CCB76D5E2DF5DFF64178B /* Frameworks */,
+				68FB0F0A05E1B48B0E279DFE8202E6E0 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				02F913F858E23CE1B146907EE9CE5090 /* PBXTargetDependency */,
+				30D6EE644579ADA2C40C11A32476F264 /* PBXTargetDependency */,
+				8995F78BB8F6C544B1046CF5B047456C /* PBXTargetDependency */,
 			);
-			name = PoporFoundation;
-			productName = PoporFoundation;
-			productReference = A51403E973B325D862223C95C9DF4FD0 /* PoporFoundation.framework */;
+			name = "Pods-PoporAlertBubbleView_Example";
+			productName = "Pods-PoporAlertBubbleView_Example";
+			productReference = C4D71B51DF5943BECB9B37B056BD45CA /* Pods_PoporAlertBubbleView_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		395CDDA709144158FD02A7235FD13781 /* PoporUI */ = {
+		66B1B5864DB3361A956CC21E862A1034 /* PoporAlertBubbleView */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3231A8DD25FC02DFB1E37DD552E4CFB7 /* Build configuration list for PBXNativeTarget "PoporUI" */;
+			buildConfigurationList = 4C08650E873538034D12E7342E64B350 /* Build configuration list for PBXNativeTarget "PoporAlertBubbleView" */;
 			buildPhases = (
-				6AEFB063505BAF0C3045FA0984B7BFCA /* Sources */,
-				DD7CD7C4DA641696B6924DD3B8F27CBA /* Frameworks */,
-				FD7A007E66D76AE31BCCEE133D8F1A6C /* Headers */,
+				BFFDB5FF90756F62CB7A95C0E8A0871A /* Headers */,
+				816062CA7B74B0CE3BA54095D7810644 /* Sources */,
+				E6FC150249E0625291C10EF7FDC7B116 /* Frameworks */,
+				E4825DC4437FE089F683BB3818070ACF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				06C730B7D98A99AF6334039777C5F24F /* PBXTargetDependency */,
+				422B4CF67DAD5B897C7840E9DDC8835D /* PBXTargetDependency */,
+			);
+			name = PoporAlertBubbleView;
+			productName = PoporAlertBubbleView;
+			productReference = 144182D3E1CF70B9FA060BAA526A54BB /* PoporAlertBubbleView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8D96CF661B70075B017F219B74CE811F /* PoporUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 39CB505BA49B117935502F73F7B88223 /* Build configuration list for PBXNativeTarget "PoporUI" */;
+			buildPhases = (
+				B3C8732CD998BF5E4B2948E8A0940EDD /* Headers */,
+				D21599421B6B281B53AA5D40F0D31F93 /* Sources */,
+				748F7C093E2DFB46EE9DD3169F99BF21 /* Frameworks */,
+				B5A1424E99523A317DFD58C3FA6B0344 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -547,61 +566,41 @@
 			productReference = CD1C36595D3FCC64E4DFEC9A37C9C9BF /* PoporUI.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		3FC364CB59D3F88F02844C55784F8252 /* Pods-PoporAlertBubbleView_Tests */ = {
+		AA253EDC916B4C25FE9E5DBB53B5601B /* Pods-PoporAlertBubbleView_Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4354CE48B7F56DAE16DB34DF8516C892 /* Build configuration list for PBXNativeTarget "Pods-PoporAlertBubbleView_Tests" */;
+			buildConfigurationList = EBCE552B9837EF3EF2678CED0BECC373 /* Build configuration list for PBXNativeTarget "Pods-PoporAlertBubbleView_Tests" */;
 			buildPhases = (
-				00E6BD1DA3770F56307476BD91F9BB48 /* Sources */,
-				FEFF339A4198EA13C00CEE0DCFE901BF /* Frameworks */,
-				1CB574CA584140511766154DFB533F05 /* Headers */,
+				BB7E6540A25CDB1A6373E6F3316D2EC3 /* Headers */,
+				814E339ECD404EEF00A8225F5B9745B5 /* Sources */,
+				EDBD1D09FB55A8C395A0EDF8231F2162 /* Frameworks */,
+				D3CD02062831233DAD79501009A8314C /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				D3C129707F83B81948347508F46FBE12 /* PBXTargetDependency */,
+				7DA4B4ADCD8BD60341D8B9CB1D805825 /* PBXTargetDependency */,
 			);
 			name = "Pods-PoporAlertBubbleView_Tests";
 			productName = "Pods-PoporAlertBubbleView_Tests";
 			productReference = DE9CE6C8F1ABDA8E60D6939A5E4254F9 /* Pods_PoporAlertBubbleView_Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		45A42F782193A1D533BAF4B1DEDE1BC3 /* Pods-PoporAlertBubbleView_Example */ = {
+		E5B5CE31AA4696E8E53F7EC81C929272 /* PoporFoundation */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 50DCBEDE05BBD1160EE547FA66429C0F /* Build configuration list for PBXNativeTarget "Pods-PoporAlertBubbleView_Example" */;
+			buildConfigurationList = C32F83B50B51BB7DDD3A88AAD6D78915 /* Build configuration list for PBXNativeTarget "PoporFoundation" */;
 			buildPhases = (
-				A1587CD826204222AF1FD4C13EFC1B3A /* Sources */,
-				73B7A3248E0113023E58400B9B9DD43B /* Frameworks */,
-				F9971B55E8C597FB27EF0CC5BEF2E4EF /* Headers */,
+				0F2CC9576A96DF042BD90ED640EC049F /* Headers */,
+				79A3432D5EE82E5E0179E133AFB4D91E /* Sources */,
+				2347BC0EB09464A6B705E5336DC9C37D /* Frameworks */,
+				A4E1DB8C5ED85A14D53410922E8CC23E /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				0BD784C414373E93F05F1139B186BD9F /* PBXTargetDependency */,
-				9A08D9376089778A97C0AF2FD55C94B6 /* PBXTargetDependency */,
-				5FBC36C2318F8D51F1BD6115E22B633C /* PBXTargetDependency */,
 			);
-			name = "Pods-PoporAlertBubbleView_Example";
-			productName = "Pods-PoporAlertBubbleView_Example";
-			productReference = C4D71B51DF5943BECB9B37B056BD45CA /* Pods_PoporAlertBubbleView_Example.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		6F1CC9D7E3C2C55839D798424E8E9B2D /* PoporAlertBubbleView */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 97A55E8F50771E5C8632FAA04E07A90E /* Build configuration list for PBXNativeTarget "PoporAlertBubbleView" */;
-			buildPhases = (
-				08443BD65A4478D636BFB6DA998BC4FA /* Sources */,
-				9D82A6F2000ACCB534668C3484E46F7F /* Frameworks */,
-				02E5D0C4A6E6E7A970B34E1D8F26C309 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				55C900857F51801D2043E816DEDA831C /* PBXTargetDependency */,
-				D8323353DF875EB2A54E6FF93AD79E29 /* PBXTargetDependency */,
-			);
-			name = PoporAlertBubbleView;
-			productName = PoporAlertBubbleView;
-			productReference = 144182D3E1CF70B9FA060BAA526A54BB /* PoporAlertBubbleView.framework */;
+			name = PoporFoundation;
+			productName = PoporFoundation;
+			productReference = A51403E973B325D862223C95C9DF4FD0 /* PoporFoundation.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -625,229 +624,146 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				45A42F782193A1D533BAF4B1DEDE1BC3 /* Pods-PoporAlertBubbleView_Example */,
-				3FC364CB59D3F88F02844C55784F8252 /* Pods-PoporAlertBubbleView_Tests */,
-				6F1CC9D7E3C2C55839D798424E8E9B2D /* PoporAlertBubbleView */,
-				1279A272480FFFF4C4E1583C1C70AA76 /* PoporFoundation */,
-				395CDDA709144158FD02A7235FD13781 /* PoporUI */,
+				01EFE70E86E051C1EC623C10E6505592 /* Pods-PoporAlertBubbleView_Example */,
+				AA253EDC916B4C25FE9E5DBB53B5601B /* Pods-PoporAlertBubbleView_Tests */,
+				66B1B5864DB3361A956CC21E862A1034 /* PoporAlertBubbleView */,
+				E5B5CE31AA4696E8E53F7EC81C929272 /* PoporFoundation */,
+				8D96CF661B70075B017F219B74CE811F /* PoporUI */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		68FB0F0A05E1B48B0E279DFE8202E6E0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4E1DB8C5ED85A14D53410922E8CC23E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5A1424E99523A317DFD58C3FA6B0344 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3CD02062831233DAD79501009A8314C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4825DC4437FE089F683BB3818070ACF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		00E6BD1DA3770F56307476BD91F9BB48 /* Sources */ = {
+		086DB73874CE8F1BEFB6AD25C6CAE2F0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				11BC78BDD834A6AD9CB8609A759FD7B1 /* Pods-PoporAlertBubbleView_Tests-dummy.m in Sources */,
+				BC6B812F7D4719FF1990C45FB1BA5BC8 /* Pods-PoporAlertBubbleView_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		08443BD65A4478D636BFB6DA998BC4FA /* Sources */ = {
+		79A3432D5EE82E5E0179E133AFB4D91E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4B811AF20C415C124E6C18E09DF47CB5 /* AlertBubbleBezierPath.m in Sources */,
-				8C7259B0B01FCA2B3A725F159BD5FB80 /* AlertBubbleFrame.m in Sources */,
-				440CCD5A693C7C357C7B29152F26DE4D /* AlertBubbleLable.m in Sources */,
-				57532DD83CB59FD086BC07BB9ECB67E3 /* AlertBubbleView.m in Sources */,
-				CE8C7E1D3F36822A58940E7AF5B8F6B2 /* PoporAlertBubbleView-dummy.m in Sources */,
+				CAC196B4EA16B3F00CA0A63699C2B493 /* NSAssistant.m in Sources */,
+				433D192140890848B09126E43B9171B5 /* PoporFoundation-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		48C46AE497FD87D147858735286EA4B4 /* Sources */ = {
+		814E339ECD404EEF00A8225F5B9745B5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				453A80DC50C0D271E138557B0564F7FF /* NSAssistant.m in Sources */,
-				D1B03A7D3568258DFA6377B81E6A9796 /* PoporFoundation-dummy.m in Sources */,
+				79BCACAE129EBF0FC6C21C8426CC17F4 /* Pods-PoporAlertBubbleView_Tests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6AEFB063505BAF0C3045FA0984B7BFCA /* Sources */ = {
+		816062CA7B74B0CE3BA54095D7810644 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				703F303BF6301D30FC501FF00FB5FEA6 /* PoporUI-dummy.m in Sources */,
-				2C337F7EAFB45444D1C649115FCF6316 /* UIView+Extension.m in Sources */,
-				8ACC7544FC55EBFFBAFF66DD3C8F06BF /* UIView+Tool.m in Sources */,
+				894CD3E5720E5C03447F8322159CB52C /* AlertBubbleBezierPath.m in Sources */,
+				3408C4151CBD887353479D07EDBC79A0 /* AlertBubbleFrame.m in Sources */,
+				A38D3F05E546DBB9250A987C1E3C4622 /* AlertBubbleLable.m in Sources */,
+				EB41B875D78619F5F0BD2921BB04EFA7 /* AlertBubbleView.m in Sources */,
+				A3CAA62C8B4141263C60EA160E7A7FB1 /* PoporAlertBubbleView-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A1587CD826204222AF1FD4C13EFC1B3A /* Sources */ = {
+		D21599421B6B281B53AA5D40F0D31F93 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C1CF7995ADB81DCA2411BE1361332BBC /* Pods-PoporAlertBubbleView_Example-dummy.m in Sources */,
+				474C5352E533F8766D3A43F46F9D54A1 /* PoporUI-dummy.m in Sources */,
+				E4EB83E4DDBEE23990E19AA625E1A239 /* UIView+Extension.m in Sources */,
+				3A633F406A3CAD625A468AD2146126EE /* UIView+Tool.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		0BD784C414373E93F05F1139B186BD9F /* PBXTargetDependency */ = {
+		02F913F858E23CE1B146907EE9CE5090 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = PoporAlertBubbleView;
-			target = 6F1CC9D7E3C2C55839D798424E8E9B2D /* PoporAlertBubbleView */;
-			targetProxy = 7D312360D9D312ECE4FE4C7CBB6526C6 /* PBXContainerItemProxy */;
+			target = 66B1B5864DB3361A956CC21E862A1034 /* PoporAlertBubbleView */;
+			targetProxy = 2CE7B07E32FFF247ADEFC89F670F6EFB /* PBXContainerItemProxy */;
 		};
-		55C900857F51801D2043E816DEDA831C /* PBXTargetDependency */ = {
+		06C730B7D98A99AF6334039777C5F24F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = PoporFoundation;
-			target = 1279A272480FFFF4C4E1583C1C70AA76 /* PoporFoundation */;
-			targetProxy = 21BFBC6649336D0EBD1F10DBF984BB90 /* PBXContainerItemProxy */;
+			target = E5B5CE31AA4696E8E53F7EC81C929272 /* PoporFoundation */;
+			targetProxy = 705C938B780C4FA1799D86ED67DD13CA /* PBXContainerItemProxy */;
 		};
-		5FBC36C2318F8D51F1BD6115E22B633C /* PBXTargetDependency */ = {
+		30D6EE644579ADA2C40C11A32476F264 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PoporFoundation;
+			target = E5B5CE31AA4696E8E53F7EC81C929272 /* PoporFoundation */;
+			targetProxy = C5C00F5C2B430A5501B5B3E3DC302857 /* PBXContainerItemProxy */;
+		};
+		422B4CF67DAD5B897C7840E9DDC8835D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = PoporUI;
-			target = 395CDDA709144158FD02A7235FD13781 /* PoporUI */;
-			targetProxy = E0733D3020EF68E0F34396F0CCF31738 /* PBXContainerItemProxy */;
+			target = 8D96CF661B70075B017F219B74CE811F /* PoporUI */;
+			targetProxy = 5CC8F5AEEABEFDB383B1590CB29CC4F2 /* PBXContainerItemProxy */;
 		};
-		9A08D9376089778A97C0AF2FD55C94B6 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = PoporFoundation;
-			target = 1279A272480FFFF4C4E1583C1C70AA76 /* PoporFoundation */;
-			targetProxy = C152423A857C6E38233DC0B813EFD276 /* PBXContainerItemProxy */;
-		};
-		D3C129707F83B81948347508F46FBE12 /* PBXTargetDependency */ = {
+		7DA4B4ADCD8BD60341D8B9CB1D805825 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-PoporAlertBubbleView_Example";
-			target = 45A42F782193A1D533BAF4B1DEDE1BC3 /* Pods-PoporAlertBubbleView_Example */;
-			targetProxy = 9768DA7BD0DADA22A5E8A9ED24D20C7E /* PBXContainerItemProxy */;
+			target = 01EFE70E86E051C1EC623C10E6505592 /* Pods-PoporAlertBubbleView_Example */;
+			targetProxy = 5FCDD2BFA298DFEB45B9F56F5BF585D2 /* PBXContainerItemProxy */;
 		};
-		D8323353DF875EB2A54E6FF93AD79E29 /* PBXTargetDependency */ = {
+		8995F78BB8F6C544B1046CF5B047456C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = PoporUI;
-			target = 395CDDA709144158FD02A7235FD13781 /* PoporUI */;
-			targetProxy = 635E8EBE75452122746AF62574724698 /* PBXContainerItemProxy */;
+			target = 8D96CF661B70075B017F219B74CE811F /* PoporUI */;
+			targetProxy = E53ED2D2752C6039AD4FE8FC39564699 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		4346353D2BC05578822E2F1CDF29FD57 /* Release */ = {
+		29255D019850F6DC52BC8A75FEC66C09 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 09F00436533F70EB3C2489CA4E4F6B62 /* PoporFoundation.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/PoporFoundation/PoporFoundation-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/PoporFoundation/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/PoporFoundation/PoporFoundation.modulemap";
-				PRODUCT_MODULE_NAME = PoporFoundation;
-				PRODUCT_NAME = PoporFoundation;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		4A14665F235A6A6DA0324DA84F7B5B3D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 94FD3DC47ACFA26CA40A469A20DBF26D /* PoporUI.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/PoporUI/PoporUI-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/PoporUI/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/PoporUI/PoporUI.modulemap";
-				PRODUCT_MODULE_NAME = PoporUI;
-				PRODUCT_NAME = PoporUI;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		4A1D3B75644B23E447C9A4B3DE9BE13D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5476BA1D70EE4A03780BF61DCD055E7B /* PoporAlertBubbleView.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/PoporAlertBubbleView/PoporAlertBubbleView-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/PoporAlertBubbleView/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/PoporAlertBubbleView/PoporAlertBubbleView.modulemap";
-				PRODUCT_MODULE_NAME = PoporAlertBubbleView;
-				PRODUCT_NAME = PoporAlertBubbleView;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		4DD43DB3A0752A4CDFD1EFA076DF8506 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 09F00436533F70EB3C2489CA4E4F6B62 /* PoporFoundation.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/PoporFoundation/PoporFoundation-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/PoporFoundation/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/PoporFoundation/PoporFoundation.modulemap";
-				PRODUCT_MODULE_NAME = PoporFoundation;
-				PRODUCT_NAME = PoporFoundation;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		4F403BDD1A657891D138F3A4B968A6A3 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9F0BB4F53D4E58FC212F3A33486CBDD0 /* Pods-PoporAlertBubbleView_Tests.release.xcconfig */;
+			baseConfigurationReference = B8D791B48E71002ACFE72B950D0C2275 /* Pods-PoporAlertBubbleView_Example.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -859,72 +775,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-PoporAlertBubbleView_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-PoporAlertBubbleView_Tests/Pods-PoporAlertBubbleView_Tests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		6329C548E392AA75ACA2F327F187718A /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5476BA1D70EE4A03780BF61DCD055E7B /* PoporAlertBubbleView.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/PoporAlertBubbleView/PoporAlertBubbleView-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/PoporAlertBubbleView/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/PoporAlertBubbleView/PoporAlertBubbleView.modulemap";
-				PRODUCT_MODULE_NAME = PoporAlertBubbleView;
-				PRODUCT_NAME = PoporAlertBubbleView;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		6B6C0E7A33D80A1CBDFF57D0670903EB /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2E24DC24E23DB2B8AD5456607C98DFDF /* Pods-PoporAlertBubbleView_Example.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-PoporAlertBubbleView_Example/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-PoporAlertBubbleView_Example/Pods-PoporAlertBubbleView_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -944,7 +795,223 @@
 			};
 			name = Release;
 		};
-		8B33C5230DE4A9DFA6D8F46505DD7AF7 /* Debug */ = {
+		55371D97C64888A557DE1E37B0303073 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F147B793F052861711C2C6D34E7DBBF /* Pods-PoporAlertBubbleView_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-PoporAlertBubbleView_Example/Pods-PoporAlertBubbleView_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PoporAlertBubbleView_Example/Pods-PoporAlertBubbleView_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		56A05ADD3BABDA1B56D1F979845809B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		5D5114A83FF2CBD972D5079F5DFA21A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 086CC5B95C0F4F623F6F0EA0A066C425 /* PoporUI.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/PoporUI/PoporUI-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PoporUI/PoporUI-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PoporUI/PoporUI.modulemap";
+				PRODUCT_MODULE_NAME = PoporUI;
+				PRODUCT_NAME = PoporUI;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		681EDEBA6D58F9BE17A52F175296E36D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A4F6733250FB6FD7D534381085E4AF10 /* PoporAlertBubbleView.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/PoporAlertBubbleView/PoporAlertBubbleView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PoporAlertBubbleView/PoporAlertBubbleView-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PoporAlertBubbleView/PoporAlertBubbleView.modulemap";
+				PRODUCT_MODULE_NAME = PoporAlertBubbleView;
+				PRODUCT_NAME = PoporAlertBubbleView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		74AB6C5F1961F53FF6234A8A5DDC7A54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 077D2B6B28D667209443E3A15EA81DA5 /* PoporFoundation.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/PoporFoundation/PoporFoundation-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PoporFoundation/PoporFoundation-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PoporFoundation/PoporFoundation.modulemap";
+				PRODUCT_MODULE_NAME = PoporFoundation;
+				PRODUCT_NAME = PoporFoundation;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7B624CDAE8595A832BA42A889B06D291 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8943004C02E41850B093D0D856C2D453 /* Pods-PoporAlertBubbleView_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-PoporAlertBubbleView_Tests/Pods-PoporAlertBubbleView_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PoporAlertBubbleView_Tests/Pods-PoporAlertBubbleView_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BEFDB93BF207328A04F1220475D02C3B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -998,7 +1065,8 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				MTL_ENABLE_DEBUG_INFO = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
@@ -1007,69 +1075,10 @@
 			};
 			name = Debug;
 		};
-		B42B54097A876E8A982CBF5DAA91B1AB /* Release */ = {
+		C388D8CD50AE0E093CEAD6DE0AF3DFBF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A4F6733250FB6FD7D534381085E4AF10 /* PoporAlertBubbleView.xcconfig */;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_ALLOWED = NO;
-				CODE_SIGNING_REQUIRED = NO;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Release;
-		};
-		DF0E8CE7C0115993FCBAA937392928AE /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A4334C8400A5CF9B3B53A9FAFD3E8F32 /* Pods-PoporAlertBubbleView_Example.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1079,28 +1088,57 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-PoporAlertBubbleView_Example/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/PoporAlertBubbleView/PoporAlertBubbleView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PoporAlertBubbleView/PoporAlertBubbleView-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-PoporAlertBubbleView_Example/Pods-PoporAlertBubbleView_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				MODULEMAP_FILE = "Target Support Files/PoporAlertBubbleView/PoporAlertBubbleView.modulemap";
+				PRODUCT_MODULE_NAME = PoporAlertBubbleView;
+				PRODUCT_NAME = PoporAlertBubbleView;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CABD7FDA29A8778B7DE9DC040ABFEDCE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 077D2B6B28D667209443E3A15EA81DA5 /* PoporFoundation.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/PoporFoundation/PoporFoundation-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PoporFoundation/PoporFoundation-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PoporFoundation/PoporFoundation.modulemap";
+				PRODUCT_MODULE_NAME = PoporFoundation;
+				PRODUCT_NAME = PoporFoundation;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		E1C2D66E884D1D1691B7B2E9188CC1E1 /* Debug */ = {
+		DD0F1970A06E6C5BA600E6C098CB3408 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1246447538278D284C21B9135F80783C /* Pods-PoporAlertBubbleView_Tests.debug.xcconfig */;
+			baseConfigurationReference = 56483A0C2B6999FE3C46EEC91A0C85F7 /* Pods-PoporAlertBubbleView_Tests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -1112,7 +1150,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-PoporAlertBubbleView_Tests/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-PoporAlertBubbleView_Tests/Pods-PoporAlertBubbleView_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -1126,14 +1164,15 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
-		F760785C2BF2576F0AFE7B8A5D1F6A8C /* Release */ = {
+		DFD86B5D4F3A932A6ED2433C34730388 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 94FD3DC47ACFA26CA40A469A20DBF26D /* PoporUI.xcconfig */;
+			baseConfigurationReference = 086CC5B95C0F4F623F6F0EA0A066C425 /* PoporUI.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1145,7 +1184,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GCC_PREFIX_HEADER = "Target Support Files/PoporUI/PoporUI-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/PoporUI/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/PoporUI/PoporUI-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -1168,53 +1207,53 @@
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8B33C5230DE4A9DFA6D8F46505DD7AF7 /* Debug */,
-				B42B54097A876E8A982CBF5DAA91B1AB /* Release */,
+				BEFDB93BF207328A04F1220475D02C3B /* Debug */,
+				56A05ADD3BABDA1B56D1F979845809B1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3231A8DD25FC02DFB1E37DD552E4CFB7 /* Build configuration list for PBXNativeTarget "PoporUI" */ = {
+		369F1124B5005E65AB5EC2A5A44C49C8 /* Build configuration list for PBXNativeTarget "Pods-PoporAlertBubbleView_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4A14665F235A6A6DA0324DA84F7B5B3D /* Debug */,
-				F760785C2BF2576F0AFE7B8A5D1F6A8C /* Release */,
+				55371D97C64888A557DE1E37B0303073 /* Debug */,
+				29255D019850F6DC52BC8A75FEC66C09 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4354CE48B7F56DAE16DB34DF8516C892 /* Build configuration list for PBXNativeTarget "Pods-PoporAlertBubbleView_Tests" */ = {
+		39CB505BA49B117935502F73F7B88223 /* Build configuration list for PBXNativeTarget "PoporUI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E1C2D66E884D1D1691B7B2E9188CC1E1 /* Debug */,
-				4F403BDD1A657891D138F3A4B968A6A3 /* Release */,
+				5D5114A83FF2CBD972D5079F5DFA21A6 /* Debug */,
+				DFD86B5D4F3A932A6ED2433C34730388 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4A19E97DCF9F9968B5AD617928B26A20 /* Build configuration list for PBXNativeTarget "PoporFoundation" */ = {
+		4C08650E873538034D12E7342E64B350 /* Build configuration list for PBXNativeTarget "PoporAlertBubbleView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4DD43DB3A0752A4CDFD1EFA076DF8506 /* Debug */,
-				4346353D2BC05578822E2F1CDF29FD57 /* Release */,
+				681EDEBA6D58F9BE17A52F175296E36D /* Debug */,
+				C388D8CD50AE0E093CEAD6DE0AF3DFBF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		50DCBEDE05BBD1160EE547FA66429C0F /* Build configuration list for PBXNativeTarget "Pods-PoporAlertBubbleView_Example" */ = {
+		C32F83B50B51BB7DDD3A88AAD6D78915 /* Build configuration list for PBXNativeTarget "PoporFoundation" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DF0E8CE7C0115993FCBAA937392928AE /* Debug */,
-				6B6C0E7A33D80A1CBDFF57D0670903EB /* Release */,
+				CABD7FDA29A8778B7DE9DC040ABFEDCE /* Debug */,
+				74AB6C5F1961F53FF6234A8A5DDC7A54 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		97A55E8F50771E5C8632FAA04E07A90E /* Build configuration list for PBXNativeTarget "PoporAlertBubbleView" */ = {
+		EBCE552B9837EF3EF2678CED0BECC373 /* Build configuration list for PBXNativeTarget "Pods-PoporAlertBubbleView_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4A1D3B75644B23E447C9A4B3DE9BE13D /* Debug */,
-				6329C548E392AA75ACA2F327F187718A /* Release */,
+				7B624CDAE8595A832BA42A889B06D291 /* Debug */,
+				DD0F1970A06E6C5BA600E6C098CB3408 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

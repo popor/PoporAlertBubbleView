@@ -1,9 +1,9 @@
 //
 //  AlertBubbleLable.m
-//  linRunShengPi
+//  AlertBubbleView
 //
 //  Created by apple on 2018/9/18.
-//  Copyright © 2018年 艾慧勇. All rights reserved.
+//  Copyright © 2018年 popor. All rights reserved.
 //
 
 #import "AlertBubbleLable.h"

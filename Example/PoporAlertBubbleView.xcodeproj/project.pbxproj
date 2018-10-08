@@ -342,7 +342,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-PoporAlertBubbleView_Example/Pods-PoporAlertBubbleView_Example-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-PoporAlertBubbleView_Example/Pods-PoporAlertBubbleView_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/PoporAlertBubbleView/PoporAlertBubbleView.framework",
 				"${BUILT_PRODUCTS_DIR}/PoporFoundation/PoporFoundation.framework",
 				"${BUILT_PRODUCTS_DIR}/PoporUI/PoporUI.framework",
@@ -355,7 +355,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PoporAlertBubbleView_Example/Pods-PoporAlertBubbleView_Example-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PoporAlertBubbleView_Example/Pods-PoporAlertBubbleView_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		F9B7BC20B9BEF7B23407F574 /* [CP] Check Pods Manifest.lock */ = {
