@@ -152,7 +152,7 @@
         CGRect checkRect = CGRectInset(bRect, -borderInnerGap, -borderInnerGap);
         if (CGRectContainsRect(abView.bounds, checkRect)) {
             if (abView.showLogInfo) {
-                NSLog(@"AlertBubbleView %@, 显示范围未越界.", ABDArray[direction]);
+                //NSLog(@"AlertBubbleView %@, 显示范围未越界.", ABDArray[direction]);
             }
             return YES;
         }else{
