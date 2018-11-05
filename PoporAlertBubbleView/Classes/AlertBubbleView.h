@@ -54,4 +54,6 @@
  */
 - (void)showCustomView:(UIView *)customeView around:(CGRect)aroundRect close:(BlockPVoid)close;
 
+- (void)closeEvent;
+
 @end

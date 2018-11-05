@@ -93,6 +93,10 @@
         //NSLog(@"AlertBubbleView 忽略");
         return;
     }
+    [self closeEvent];
+}
+
+- (void)closeEvent {
     if (self.closeBlock) {
         self.closeBlock();
     }
