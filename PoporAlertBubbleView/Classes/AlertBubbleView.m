@@ -13,6 +13,10 @@
 #import <PoporFoundation/NSAssistant.h>
 #import <PoporFoundation/PrefixColor.h>
 
+@interface AlertBubbleView () <UIGestureRecognizerDelegate>
+
+@end
+
 @implementation AlertBubbleView
 
 - (id)initWithDic:(NSDictionary *)dic {
@@ -46,6 +50,8 @@
         
         [self.baseView addSubview:self];
         self.closeTapGR = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(closeAction:)];
+        self.closeTapGR.delegate = self;
+        
         [self addGestureRecognizer:self.closeTapGR];
         
         // 矫正必要数据.
@@ -87,12 +93,15 @@
     }
 }
 
-- (void)closeAction:(UITapGestureRecognizer *)tapGR {
-    CGPoint point = [tapGR locationInView:self.baseView];
-    if (CGRectContainsPoint(self.bubbleView.frame, point)) {
-        //NSLog(@"AlertBubbleView 忽略");
-        return;
+-(BOOL)gestureRecognizer:(UIGestureRecognizer*)gestureRecognizer shouldReceiveTouch:(UITouch*)touch {
+    CGPoint point = [touch locationInView:self];
+    if (CGRectContainsPoint(self.customeView.frame, point)) {
+        return NO;
     }
+    return YES;
+}
+
+- (void)closeAction:(UITapGestureRecognizer *)tapGR {
     [self closeEvent];
 }
 
