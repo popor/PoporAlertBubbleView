@@ -23,8 +23,13 @@
 
 @property (nonatomic        ) float    trangleWidth;
 @property (nonatomic        ) float    trangleHeight;// 三角的高度
-@property (nonatomic        ) float    borderInnerGap;// 边界 insertEdge  gap
-@property (nonatomic        ) float    lableInnerGap;// lable insertEdge  gap
+
+// AlertBubbleView距离baseView边界的 insertEdge gap, 防止AlertBubbleView紧紧贴边显示.
+@property (nonatomic        ) float    borderInnerGap;
+
+// customeView距离AlertBubbleView边界的insertEdge gap, 防止customeView紧紧贴AlertBubbleView显示
+@property (nonatomic        ) float    customeViewInnerGap;
+@property (nonatomic        ) float    lableInnerGap NS_DEPRECATED_IOS(1_0, 1_0, "Use -customeViewInnerGap");
 
 @property (nonatomic, weak  ) UIView   * baseView;
 
@@ -32,7 +37,7 @@
 @property (nonatomic, strong) UIColor  * bgColor;
 
 // --- 内部不可设置参数
-@property (nonatomic        ) float                    miniGap;// borderInnerGap + lableInnerGap
+@property (nonatomic        ) float                    miniGap;// borderInnerGap + customeViewInnerGap
 @property (nonatomic        ) float                    trangleX;
 @property (nonatomic        ) float                    trangleY;
 @property (nonatomic, copy  ) BlockPVoid               closeBlock;

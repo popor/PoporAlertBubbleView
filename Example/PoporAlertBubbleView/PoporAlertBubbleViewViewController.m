@@ -112,7 +112,8 @@
                            @"trangleWidth":@(5),
                            
                            @"borderInnerGap":@(10),
-                           @"lableInnerGap":@(5),
+                           @"customeViewInnerGap":@(5),
+                           
                            @"bubbleBgColor":RGB16A(0XF5F8FF, 1),
                            @"bgColor":[UIColor clearColor],
                            
@@ -154,8 +155,8 @@
                            @"trangleHeight":@(8),
                            @"trangleWidth":@(8),
                            
-                           @"borderInnerGap":@(15),
-                           @"lableInnerGap":@(0),
+                           @"borderInnerGap":@(10),
+                           @"customeViewInnerGap":@(0),
                            
                            @"bubbleBgColor":self.alertBubbleTVColor,
                            @"bgColor":[UIColor clearColor],

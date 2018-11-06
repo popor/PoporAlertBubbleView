@@ -21,12 +21,12 @@
 {
     AlertBubbleViewDirection direction = abView.direction;
 
-    float lableInnerGap  = abView.lableInnerGap ;// lable insertEdge  gap
-    float miniGap        = abView.miniGap;// borderInnerGap + lableInnerGap
-    float borderInnerGap = abView.borderInnerGap;// lable insertEdge  gap
+    float customeViewInnerGap = abView.customeViewInnerGap ;// lable insertEdge  gap
+    float miniGap             = abView.miniGap;// borderInnerGap + customeViewInnerGap
+    float borderInnerGap      = abView.borderInnerGap;// lable insertEdge  gap
 
-    
-    float trangleHeight  = abView.trangleHeight;
+
+    float trangleHeight       = abView.trangleHeight;
     
     float tX  = arroudRect.origin.x;
     float tY  = arroudRect.origin.y;
@@ -117,31 +117,31 @@
         }
         // 目前bRect和cRect的super相同.
         // 计算纠正bRect
-        bRect = CGRectInset(cRect, -lableInnerGap, -lableInnerGap);
+        bRect = CGRectInset(cRect, -customeViewInnerGap, -customeViewInnerGap);
         switch (direction) {
                 
             case AlertBubbleViewDirectionLeft:{
-                bRect = CGRectMake(bRect.origin.x-lableInnerGap-trangleHeight, bRect.origin.y
+                bRect = CGRectMake(bRect.origin.x-customeViewInnerGap-trangleHeight, bRect.origin.y
                                    , bRect.size.width + trangleHeight, bRect.size.height);
-                cRect  = CGRectOffset(cRect, -lableInnerGap-trangleHeight, 0);
+                cRect  = CGRectOffset(cRect, -customeViewInnerGap-trangleHeight, 0);
                 break;
             }
             case AlertBubbleViewDirectionRight:{
-                bRect = CGRectMake(bRect.origin.x + lableInnerGap, bRect.origin.y
+                bRect = CGRectMake(bRect.origin.x + customeViewInnerGap, bRect.origin.y
                                    , bRect.size.width + trangleHeight, bRect.size.height);
-                cRect  = CGRectOffset(cRect, lableInnerGap+trangleHeight, 0);
+                cRect  = CGRectOffset(cRect, customeViewInnerGap+trangleHeight, 0);
                 break;
             }
             case AlertBubbleViewDirectionTop:{
-                bRect = CGRectMake(bRect.origin.x, bRect.origin.y-lableInnerGap-trangleHeight
+                bRect = CGRectMake(bRect.origin.x, bRect.origin.y-customeViewInnerGap-trangleHeight
                                    , bRect.size.width, bRect.size.height+trangleHeight);
-                cRect  = CGRectOffset(cRect, 0, -lableInnerGap-trangleHeight);
+                cRect  = CGRectOffset(cRect, 0, -customeViewInnerGap-trangleHeight);
                 break;
             }
             case AlertBubbleViewDirectionBottom:{
-                bRect = CGRectMake(bRect.origin.x, bRect.origin.y + lableInnerGap
+                bRect = CGRectMake(bRect.origin.x, bRect.origin.y + customeViewInnerGap
                                    , bRect.size.width, bRect.size.height+trangleHeight);
-                cRect  = CGRectOffset(cRect, 0, lableInnerGap+trangleHeight);
+                cRect  = CGRectOffset(cRect, 0, customeViewInnerGap+trangleHeight);
                 break;
             }
                 

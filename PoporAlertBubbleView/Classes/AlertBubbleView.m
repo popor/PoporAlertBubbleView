@@ -31,6 +31,9 @@
         if (!self.bgColor) {
             self.bgColor = [UIColor clearColor];
         }
+        if (self.lableInnerGap != 0 && self.customeViewInnerGap == 0) {
+            self.customeViewInnerGap = self.lableInnerGap;
+        }
     }
     return self;
 }
@@ -55,7 +58,7 @@
         [self addGestureRecognizer:self.closeTapGR];
         
         // 矫正必要数据.
-        self.miniGap = self.borderInnerGap + self.lableInnerGap;
+        self.miniGap = self.borderInnerGap + self.customeViewInnerGap;
     }
     
     [self showTargetView];
@@ -72,8 +75,8 @@
     UIBezierPath * path = [AlertBubbleBezierPath pathAtClipView:self.bubbleView
                                                       direction:self.direction
                                                           scale:1.0
-                                                      triangleX:-(self.trangleX-self.lableInnerGap)
-                                                      triangleY:-(self.trangleY-self.lableInnerGap)
+                                                      triangleX:-(self.trangleX-self.customeViewInnerGap)
+                                                      triangleY:-(self.trangleY-self.customeViewInnerGap)
                                                       triangleW:self.trangleWidth
                                                       triangleH:self.trangleHeight
                                                    cornerRadius:self.corner];
