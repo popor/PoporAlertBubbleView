@@ -10,6 +10,7 @@
 #endif
 #endif
 
+#import "UIDeviceScreen.h"
 #import "UIView+Extension.h"
 #import "UIView+Tool.h"
 
