@@ -140,15 +140,6 @@
 }
 
 - (void)showTVAlertActionCustom:(UIBarButtonItem *)sender event:(UIEvent *)event {
-    //CGRect fromRect = [[event.allTouches anyObject] view].frame;
-    UITouch * touch = [event.allTouches anyObject];
-    //UIWindow * window = [[UIApplication sharedApplication] keyWindow];
-    
-    //CGPoint point = [touch locationInView:window];
-    //fromRect.origin = point;
-    
-    CGRect fromRect = [touch.view.superview convertRect:touch.view.frame toView:self.navigationController.view];
-    fromRect.origin.y -= 8;
     
     NSDictionary * dic = @{
                            @"direction":@(AlertBubbleViewDirectionTop),
@@ -156,11 +147,6 @@
                            @"borderLineColor":self.alertBubbleTVColor,
                            @"borderLineWidth":@(1),
                            @"corner":@(5),
-                           @"trangleHeight":@(8),
-                           @"trangleWidth":@(8),
-                           
-                           @"borderInnerGap":@(10),
-                           @"customeViewInnerGap":@(0),
                            
                            @"bubbleBgColor":self.alertBubbleTVColor,
                            @"bgColor":[UIColor clearColor],
