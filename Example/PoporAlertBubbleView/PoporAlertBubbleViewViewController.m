@@ -75,6 +75,10 @@
         UIBarButtonItem *item1 = [[UIBarButtonItem alloc] initWithTitle:@"显示" style:UIBarButtonItemStylePlain target:self action:@selector(showTVAlertAction:event:)];
         self.navigationItem.rightBarButtonItems = @[item1];
     }
+    {
+        UIBarButtonItem *item1 = [[UIBarButtonItem alloc] initWithTitle:@"自定义位置" style:UIBarButtonItemStylePlain target:self action:@selector(showTVAlertActionCustom:event:)];
+        self.navigationItem.leftBarButtonItems = @[item1];
+    }
 }
 
 - (void)btAction:(UIButton *)bt {
@@ -133,6 +137,45 @@
 
 - (void)showTVAlertAction {
     
+}
+
+- (void)showTVAlertActionCustom:(UIBarButtonItem *)sender event:(UIEvent *)event {
+    //CGRect fromRect = [[event.allTouches anyObject] view].frame;
+    UITouch * touch = [event.allTouches anyObject];
+    //UIWindow * window = [[UIApplication sharedApplication] keyWindow];
+    
+    //CGPoint point = [touch locationInView:window];
+    //fromRect.origin = point;
+    
+    CGRect fromRect = [touch.view.superview convertRect:touch.view.frame toView:self.navigationController.view];
+    fromRect.origin.y -= 8;
+    
+    NSDictionary * dic = @{
+                           @"direction":@(AlertBubbleViewDirectionTop),
+                           @"baseView":self.navigationController.view,
+                           @"borderLineColor":self.alertBubbleTVColor,
+                           @"borderLineWidth":@(1),
+                           @"corner":@(5),
+                           @"trangleHeight":@(8),
+                           @"trangleWidth":@(8),
+                           
+                           @"borderInnerGap":@(10),
+                           @"customeViewInnerGap":@(0),
+                           
+                           @"bubbleBgColor":self.alertBubbleTVColor,
+                           @"bgColor":[UIColor clearColor],
+                           @"showAroundRect":@(NO),
+                           @"showLogInfo":@(NO),
+                           };
+    
+    AlertBubbleView * abView = [[AlertBubbleView alloc] initWithDic:dic];
+    
+    UITableView * tv = [self alertBubbleTV];
+    tv.center = self.navigationController.view.center;
+    
+    [abView showCustomView:tv close:nil];
+    
+    self.alertBubbleView = abView;
 }
 
 - (void)showTVAlertAction:(UIBarButtonItem *)sender event:(UIEvent *)event {

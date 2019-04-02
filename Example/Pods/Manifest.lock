@@ -1,5 +1,5 @@
 PODS:
-  - PoporAlertBubbleView (0.0.08):
+  - PoporAlertBubbleView (0.0.09):
     - PoporFoundation/NSAssistant
     - PoporFoundation/PrefixCore
     - PoporUI/UIView
@@ -26,10 +26,10 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  PoporAlertBubbleView: aea73e383fca9d7dedda533fac160c9e66c720cf
+  PoporAlertBubbleView: 1f41884539a40903e6ad72da503cfe51cbd1b470
   PoporFoundation: bca1071cd750888f2dac9e5f5bb0857d4f76e92b
   PoporUI: b4c780eec637e1123bdc9d6a55d0a555968c8773
 
 PODFILE CHECKSUM: b3dbb620cb65f51ce8d16433a135c75e8f4a5f66
 
-COCOAPODS: 1.6.0.beta.2
+COCOAPODS: 1.7.0.beta.3

@@ -43,7 +43,7 @@
 @property (nonatomic, copy  ) BlockPVoid               closeBlock;
 
 @property (nonatomic, strong) UIView                   * customeView;
-@property (nonatomic, strong) UIView                   * bubbleView;
+@property (nonatomic, strong) UIView                   * bubbleView; // 自定义视图的气泡view
 @property (nonatomic, strong) CAShapeLayer             * borderLayer;
 @property (nonatomic, strong) UITapGestureRecognizer   * closeTapGR;
 
@@ -56,8 +56,14 @@
 
 /*
  rect:变大rect的size,可以扩大尖角和指示页面之间的距离,例如 rect = CGRectInset(rect, -3, -3);
+ 围绕某个区域显示.
  */
 - (void)showCustomView:(UIView *)customeView around:(CGRect)aroundRect close:(BlockPVoid)close;
+
+/*
+ 自定义customeView的frame, 这个不显示三角符号.
+ */
+- (void)showCustomView:(UIView *)customeView close:(BlockPVoid)close;
 
 - (void)closeEvent;
 
