@@ -16,10 +16,13 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 lableInnerGap更改为customeViewInnerGap,版本迭代产生的命名错误.
 
+0.0.09: 增加了自定义位置的功能
+
 ```
 <p>
-<img src="https://github.com/popor/PoporAlertBubbleView/blob/master/Example/image/screen0.png" width="40%" height="40%">
-<img src="https://github.com/popor/PoporAlertBubbleView/blob/master/Example/image/screen1.png" width="40%" height="40%">
+<img src="https://github.com/popor/PoporAlertBubbleView/blob/master/Example/image/screen0.png" width="30%" height="30%">
+<img src="https://github.com/popor/PoporAlertBubbleView/blob/master/Example/image/screen1.png" width="30%" height="30%">
+<img src="https://github.com/popor/PoporAlertBubbleView/blob/master/Example/image/screen2.png" width="30%" height="30%">
 
 </p>
 

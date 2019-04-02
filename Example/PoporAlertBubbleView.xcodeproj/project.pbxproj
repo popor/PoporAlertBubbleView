@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1812D1BB2151E65600FF10E6 /* screen1.png in Resources */ = {isa = PBXBuildFile; fileRef = 1812D1B92151E65600FF10E6 /* screen1.png */; };
 		1812D1BC2151E65600FF10E6 /* screen0.png in Resources */ = {isa = PBXBuildFile; fileRef = 1812D1BA2151E65600FF10E6 /* screen0.png */; };
+		18E52ECF225303D000EF8BF6 /* screen2.png in Resources */ = {isa = PBXBuildFile; fileRef = 18E52ECE225303D000EF8BF6 /* screen2.png */; };
 		2B405E28BBF9D5E1AE3E83D2 /* Pods_PoporAlertBubbleView_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A814440A1CEF1D57ED1A6125 /* Pods_PoporAlertBubbleView_Example.framework */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
@@ -42,6 +43,7 @@
 		0C2EFBEB649CBF6F315F8246 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		1812D1B92151E65600FF10E6 /* screen1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = screen1.png; sourceTree = "<group>"; };
 		1812D1BA2151E65600FF10E6 /* screen0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = screen0.png; sourceTree = "<group>"; };
+		18E52ECE225303D000EF8BF6 /* screen2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = screen2.png; sourceTree = "<group>"; };
 		1B88D165FD6424440C370264 /* Pods-PoporAlertBubbleView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PoporAlertBubbleView_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PoporAlertBubbleView_Tests/Pods-PoporAlertBubbleView_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		47F755E1BEFD191BE7DBB94F /* Pods-PoporAlertBubbleView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PoporAlertBubbleView_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-PoporAlertBubbleView_Example/Pods-PoporAlertBubbleView_Example.release.xcconfig"; sourceTree = "<group>"; };
 		54993106497305C561403E84 /* PoporAlertBubbleView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = PoporAlertBubbleView.podspec; path = ../PoporAlertBubbleView.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
@@ -102,6 +104,7 @@
 		1812D1B82151E65600FF10E6 /* image */ = {
 			isa = PBXGroup;
 			children = (
+				18E52ECE225303D000EF8BF6 /* screen2.png */,
 				1812D1B92151E65600FF10E6 /* screen1.png */,
 				1812D1BA2151E65600FF10E6 /* screen0.png */,
 			);
@@ -282,6 +285,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -307,6 +311,7 @@
 				1812D1BB2151E65600FF10E6 /* screen1.png in Resources */,
 				1812D1BC2151E65600FF10E6 /* screen0.png in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
+				18E52ECF225303D000EF8BF6 /* screen2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
