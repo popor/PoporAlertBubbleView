@@ -9,8 +9,7 @@
 #import "PoporAlertBubbleViewViewController.h"
 
 #import "AlertBubbleView.h"
-#import <PoporFoundation/PrefixColor.h>
-#import <PoporUI/UIDeviceScreen.h>
+#import <PoporUI/UIDevice+pScreenSize.h>
 
 @interface PoporAlertBubbleViewViewController () <UITableViewDelegate, UITableViewDataSource>
 
@@ -63,7 +62,7 @@
                 break;
             }
             case 2: {
-                oneBT.frame = CGRectMake(self.view.frame.size.width - 100, self.view.frame.size.height - 64 -[UIDeviceScreen safeBottomMargin], 80, 44);
+                oneBT.frame = CGRectMake(self.view.frame.size.width - 100, self.view.frame.size.height - 64 -[UIDevice safeBottomMargin], 80, 44);
                 break;
             }
             default:
@@ -108,7 +107,7 @@
                            @"direction":@(direction),
                            @"baseView":self.navigationController.view,
                            
-                           @"borderLineColor":ColorBlue1,
+                           @"borderLineColor":[UIColor blueColor],
                            @"borderLineWidth":@(1),
                            @"corner":@(5),
                            
@@ -118,7 +117,7 @@
                            @"borderInnerGap":@(10),
                            @"customeViewInnerGap":@(5),
                            
-                           @"bubbleBgColor":RGB16A(0XF5F8FF, 1),
+                           @"bubbleBgColor":[UIColor lightGrayColor],
                            @"bgColor":[UIColor clearColor],
                            
                            // test
@@ -131,7 +130,7 @@
     CGRect rect = [bt.superview convertRect:bt.frame toView:self.view];
     rect = CGRectInset(rect, -5, -5);
     
-    UILabel * l = [AlertBubbleLable text:text color:ColorBlue1 font:[UIFont systemFontOfSize:15] width:200];
+    UILabel * l = [AlertBubbleLable text:text color:[UIColor blueColor] font:[UIFont systemFontOfSize:15] width:200];
     [abView showCustomView:l around:rect close:nil];
 }
 

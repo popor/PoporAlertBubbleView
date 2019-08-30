@@ -1,15 +1,15 @@
 //
-//  PrefixFun.h
-//  linRunShengPi
+//  Fun+pPrefix.h
+//  PoporFoundation
 //
 //  Created by popor on 2018/2/1.
 //  Copyright © 2018年 popor. All rights reserved.
 //
 
-#ifndef PrefixFun_h
-#define PrefixFun_h
+#ifndef Fun_pPrefix_h
+#define Fun_pPrefix_h
 
-
+// 异步执行
 #ifndef dispatch_main_async_safe_sd
 #define dispatch_main_async_safe_sd(block)\
 if (strcmp(dispatch_queue_get_label(DISPATCH_CURRENT_QUEUE_LABEL), dispatch_queue_get_label(dispatch_get_main_queue())) == 0) {\
@@ -23,11 +23,12 @@ dispatch_async(dispatch_get_main_queue(), block);\
 
 // 标记开发状态
 #ifndef __OPTIMIZE__
-#define IsDebugVersion                     YES
+#define PIsDebugVersion                     YES
 #else
-#define IsDebugVersion                     NO
+#define PIsDebugVersion                     NO
 #endif
 
+// 特殊输入日志
 #ifndef __OPTIMIZE__
 #define NSLog(...) NSLog(__VA_ARGS__)
 
@@ -67,10 +68,27 @@ dispatch_async(dispatch_get_main_queue(), block);\
 
 #endif
 
-#define IsIphoneDevice (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
-#define IsIpadDevice   (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+#define PIsIphoneDevice (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
+#define PIsIpadDevice   (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
 
-/** 版本号小于11 */
-#define IsVersionLessThan11 [UIDevice currentDevice].systemVersion.doubleValue < 11.0
+// -----------------------------------------------------------------------------
+#pragma mark - iOS
+#if TARGET_OS_IOS || TARGET_OS_TV || TARGET_OS_WATCH
+#import <UIKit/UIKit.h>
 
-#endif /* PrefixFun_h */
+#define NSValuePoint(point)         [NSValue valueWithCGPoint:point]
+#define NSValueVector(vector)       [NSValue valueWithCGVector:vector]
+#define NSValueSize(size)           [NSValue valueWithCGSize:size]
+#define NSValueRect(rect)           [NSValue valueWithCGRect:rect]
+#define NSValueTransform(transform) [NSValue valueWithCGAffineTransform:transform]
+#define NSValueInsets(insets)       [NSValue valueWithUIEdgeInsets:insets]
+#define NSValueOffset(insets)       [NSValue valueWithUIOffset:insets]
+
+#pragma mark - macOS
+#elif TARGET_OS_MAC
+#import <AppKit/AppKit.h>
+
+
+#endif
+
+#endif /* Fun+pPrefix_h */

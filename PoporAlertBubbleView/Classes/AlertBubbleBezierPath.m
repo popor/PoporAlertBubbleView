@@ -7,7 +7,7 @@
 //
 
 #import "AlertBubbleBezierPath.h"
-#import <PoporUI/UIView+Extension.h>
+#import <PoporUI/UIView+pExtension.h>
 
 @implementation AlertBubbleBezierPath
 

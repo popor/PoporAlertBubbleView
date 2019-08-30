@@ -1,16 +1,17 @@
 //
-//  PrefixSize.h
-//  AppStore
+//  Size+pPrefix.h
+//  PoporFoundation
 //
 //  Created by popor on 2017/7/6.
 //  Copyright © 2017年 popor. All rights reserved.
 //
 
-#ifndef PrefixOs_h
-#define PrefixOs_h
+#ifndef Os_pPrefix_h
+#define Os_pPrefix_h
 
 // UI系列
 #if TARGET_OS_IOS || TARGET_OS_TV || TARGET_OS_WATCH
+#import <UIKit/UIKit.h>
 
 #define VIEW_CLASS  UIView
 #define VC_CLASS    UIViewController
@@ -23,6 +24,7 @@
 
 // NS系列
 #elif TARGET_OS_MAC
+#import <AppKit/AppKit.h>
 
 #define VIEW_CLASS  NSView
 #define VC_CLASS    NSViewController
@@ -38,4 +40,4 @@
 
 
 
-#endif /* PrefixOs_h */
+#endif /* Os+pPrefix_h */

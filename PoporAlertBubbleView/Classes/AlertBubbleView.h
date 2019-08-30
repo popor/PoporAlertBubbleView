@@ -10,7 +10,7 @@
 
 #import "AlertBubbleBezierPath.h"
 #import "AlertBubbleLable.h"
-#import <PoporFoundation/PrefixBlock.h>
+#import <PoporFoundation/Block+pPrefix.h>
 
 @interface AlertBubbleView : UIView
 

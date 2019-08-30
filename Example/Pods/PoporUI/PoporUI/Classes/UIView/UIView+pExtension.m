@@ -1,14 +1,14 @@
 //
-//  UIView+Extension.m
+//  UIView+pExtension.m
 //  PoporUI
 //
 //  Created by popor on 2018/6/19.
 //  Copyright © 2018年 popor. All rights reserved.
 //
 
-#import "UIView+Extension.h"
+#import "UIView+pExtension.h"
 
-@implementation UIView (Extension)
+@implementation UIView (pExtension)
 - (void)setX:(CGFloat)x
 {
     CGRect frame = self.frame;

@@ -10,9 +10,14 @@
 #endif
 #endif
 
-#import "UIDeviceScreen.h"
-#import "UIView+Extension.h"
-#import "UIView+Tool.h"
+#import "IToastKeyboard.h"
+#import "IToast_Popor.h"
+#import "UIDevice+pPermission.h"
+#import "UIDevice+pSaveImage.h"
+#import "UIDevice+pScreenSize.h"
+#import "UIDevice+pTool.h"
+#import "UIView+pExtension.h"
+#import "UIView+pTool.h"
 
 FOUNDATION_EXPORT double PoporUIVersionNumber;
 FOUNDATION_EXPORT const unsigned char PoporUIVersionString[];

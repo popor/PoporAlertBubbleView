@@ -1,13 +1,15 @@
 //
 //  PrefixBlock.h
-//  linRunShengPi
+//  PoporFoundation
 //
 //  Created by popor on 2018/1/11.
 //  Copyright © 2018年 popor. All rights reserved.
 //
 
-#ifndef PrefixBlock_h
-#define PrefixBlock_h
+#import <Foundation/Foundation.h>
+
+#ifndef Block_pPrefix_h
+#define Block_pPrefix_h
 
 // 函数中用到的
 //(void (^)(void))block
@@ -18,6 +20,7 @@
 typedef void(^BlockPVoid)             (void);
 typedef void(^BlockPInt)              (int number);
 typedef void(^BlockPInteger)          (NSInteger number);
+typedef void(^BlockPFloat)            (CGFloat number);
 typedef void(^BlockPBool)             (BOOL value);
 typedef void(^BlockPString)           (NSString * string);
 typedef void(^BlockPDic)              (NSDictionary * dic);

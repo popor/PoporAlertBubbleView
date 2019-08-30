@@ -8,10 +8,9 @@
 
 #import "AlertBubbleView.h"
 
-#import "UIView+Tool.h"
+#import "UIView+pTool.h"
 #import "AlertBubbleFrame.h"
 #import <PoporFoundation/NSAssistant.h>
-#import <PoporFoundation/PrefixColor.h>
 
 @interface AlertBubbleView () <UIGestureRecognizerDelegate>
 
@@ -171,7 +170,8 @@
     if (self.showAroundRect) {
         UIView * view = [UIView new];
         view.frame = self.aroundRect;
-        view.backgroundColor = RGBA(0, 0, 0, 0.4);
+        
+        view.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.4];
         [self addSubview:view];
     }
 }

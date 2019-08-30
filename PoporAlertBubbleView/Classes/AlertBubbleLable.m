@@ -7,7 +7,7 @@
 //
 
 #import "AlertBubbleLable.h"
-#import <PoporUI/UIView+Extension.h>
+#import <PoporUI/UIView+pExtension.h>
 
 @implementation AlertBubbleLable
 

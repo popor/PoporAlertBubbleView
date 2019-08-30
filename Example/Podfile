@@ -3,7 +3,7 @@ use_frameworks!
 target 'PoporAlertBubbleView_Example' do
   pod 'PoporAlertBubbleView', :path => '../'
   
-  pod 'PoporUI/UIDeviceScreen'
+  pod 'PoporUI/UIDevice'
   
   target 'PoporAlertBubbleView_Tests' do
     inherit! :search_paths
