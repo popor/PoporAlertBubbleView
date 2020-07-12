@@ -47,7 +47,11 @@
         
         self.frame = self.baseView.bounds;
         if (self.bgColor) {
-            self.backgroundColor = self.bgColor;
+            self.backgroundColor = [UIColor clearColor];
+            self.showBgColorAnimationTime = self.showBgColorAnimationTime >0 ? self.showBgColorAnimationTime:0.15;
+            [UIView animateWithDuration:self.showBgColorAnimationTime animations:^{
+                self.backgroundColor = self.bgColor;
+            }];
         }
         
         [self.baseView addSubview:self];

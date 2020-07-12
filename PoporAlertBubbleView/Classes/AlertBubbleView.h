@@ -34,7 +34,10 @@
 @property (nonatomic, weak  ) UIView   * baseView;
 
 @property (nonatomic, strong) UIColor  * bubbleBgColor;
+
+// 假如设置了bgColor, 将以动画方式显示.
 @property (nonatomic, strong) UIColor  * bgColor;
+@property (nonatomic        ) CGFloat    showBgColorAnimationTime;
 
 // --- 内部不可设置参数
 @property (nonatomic        ) float                    miniGap;// borderInnerGap + customeViewInnerGap
