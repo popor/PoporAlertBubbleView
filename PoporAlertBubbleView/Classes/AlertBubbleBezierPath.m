@@ -28,10 +28,42 @@
     
     UIBezierPath *path = [UIBezierPath bezierPath];
     switch (direction) {
+        case AlertBubbleViewDirectionTop:
+        case AlertBubbleViewDirectionBottom: {
+            // 左越界 判断
+            if (triangleX <triangleW +cornerRadius +2) {
+                triangleX = triangleW +cornerRadius +2;
+            }
+            
+            // 右越界 判断
+            if (triangleX > clipView.width - cornerRadius - triangleW -2) {
+                triangleX = clipView.width - cornerRadius - triangleW -2;
+            }
+            
+            break;
+        }
+        case AlertBubbleViewDirectionLeft:
+        case AlertBubbleViewDirectionRight: {
+            // 上越界 判断
+            if (triangleY <triangleH +cornerRadius +2) {
+                triangleY = triangleH +cornerRadius +2;
+            }
+            
+            // 下越界 判断
+            if (triangleY > clipView.height -cornerRadius -triangleH -2) {
+                triangleY = clipView.height -cornerRadius -triangleH -2;
+            }
+            break;
+        }
+        default:
+            break;
+    }
+    
+    switch (direction) {
         case AlertBubbleViewDirectionTop:{
             /*
              *   ❶**************❷
-             *   *              *
+             *   0              *
              *   *              *
              *   *              *
              *   *              *
@@ -73,7 +105,8 @@
         }
         case AlertBubbleViewDirectionBottom:{
             /*
-             *   ❶***^**********❷
+             *       ^
+             *   ❶*** **********❷
              *   *              *
              *   *              *
              *   *              *
@@ -118,9 +151,9 @@
         case AlertBubbleViewDirectionLeft:{
             /*
              *   ❶**************❷
+             *   0              *
              *   *              *
-             *   *              *
-             *   *               >
+             *   *                >
              *   *              *
              *   *              *
              *   ❹**************❸
@@ -153,13 +186,13 @@
         }
         case AlertBubbleViewDirectionRight:{
             /*
-             *   ❶**************❷
-             *   *              *
-             *   *              *
-             *  <               *
-             *   *              *
-             *   *              *
-             *   ❹**************❸
+             *    ❶**************❷
+             *    *              *
+             *    *              *
+             *  <                *
+             *    *              *
+             *    0              *
+             *    ❹**************❸
              */
             // 尖角到第1个拐角
             [path moveToPoint:CGPointMake(0, triangleY)];
