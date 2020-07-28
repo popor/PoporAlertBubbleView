@@ -16,6 +16,7 @@
 
 // --- dic可设置参数
 @property (nonatomic        ) AlertBubbleViewDirection direction;
+@property (nonatomic, copy  ) NSArray                * directionSortArray; // 自定义优先使用的顺序
 
 @property (nonatomic, strong) UIColor  * borderLineColor;
 @property (nonatomic        ) float    borderLineWidth;

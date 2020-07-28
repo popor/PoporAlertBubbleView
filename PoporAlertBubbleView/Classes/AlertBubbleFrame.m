@@ -20,20 +20,19 @@
        AlertBubbleView:(AlertBubbleView *)abView
 {
     AlertBubbleViewDirection direction = abView.direction;
-
-    float customeViewInnerGap = abView.customeViewInnerGap ;// lable insertEdge  gap
-    float miniGap             = abView.miniGap;// borderInnerGap + customeViewInnerGap
-    float borderInnerGap      = abView.borderInnerGap;// lable insertEdge  gap
-
-
-    float trangleHeight       = abView.trangleHeight;
+    NSArray * directionSortArray       = abView.directionSortArray;
     
-    float tX  = arroudRect.origin.x;
-    float tY  = arroudRect.origin.y;
-    float tW  = arroudRect.size.width;
-    float tH  = arroudRect.size.height;
-    float tCX = tX + tW/2;
-    float tCY = tY + tH/2;
+    CGFloat customeViewInnerGap = abView.customeViewInnerGap ;// lable insertEdge  gap
+    CGFloat miniGap             = abView.miniGap;// borderInnerGap + customeViewInnerGap
+    CGFloat borderInnerGap      = abView.borderInnerGap;// lable insertEdge  gap
+    CGFloat trangleHeight       = abView.trangleHeight;
+    
+    CGFloat tX  = arroudRect.origin.x;
+    CGFloat tY  = arroudRect.origin.y;
+    CGFloat tW  = arroudRect.size.width;
+    CGFloat tH  = arroudRect.size.height;
+    CGFloat tCX = tX + tW/2;
+    CGFloat tCY = tY + tH/2;
     
     __block CGRect  cRect;
     __block CGRect  bRect;
@@ -167,15 +166,31 @@
     if (!rectBlock(direction)) {
         BOOL ok = NO;
         AlertBubbleViewDirection updateDirection = AlertBubbleViewDirectionNone;
-        for (int i = AlertBubbleViewDirectionTop; i<AlertBubbleViewDirectionError; i++) {
-            if (direction == i) {
-                continue;
-            }else{
-                if (rectBlock(i)) {
-                    updateDirection = i;
-                    ok = YES;
-                    //NSLog(@"AlertBubbleView OK 2");
-                    break;
+        if (directionSortArray.count > 0) { // 使用自定义的书序检查
+            for (NSNumber * number in directionSortArray) {
+                NSInteger i = number.integerValue;
+                if (direction == i) {
+                    continue;
+                }else{
+                    if (rectBlock(i)) {
+                        updateDirection = i;
+                        ok = YES;
+                        //NSLog(@"AlertBubbleView OK 2");
+                        break;
+                    }
+                }
+            }
+        } else {
+            for (NSInteger i = AlertBubbleViewDirectionTop; i<AlertBubbleViewDirectionError; i++) {
+                if (direction == i) {
+                    continue;
+                }else{
+                    if (rectBlock(i)) {
+                        updateDirection = i;
+                        ok = YES;
+                        //NSLog(@"AlertBubbleView OK 2");
+                        break;
+                    }
                 }
             }
         }

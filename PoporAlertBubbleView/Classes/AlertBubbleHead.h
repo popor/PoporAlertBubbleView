@@ -11,10 +11,10 @@
 
 // 以targetRect为中心点
 #define ABDArray @[@"NAN", @"上", @"下", @"左", @"右", @"Error"]
-typedef NS_ENUM(int, AlertBubbleViewDirection) {
+typedef NS_ENUM(NSInteger, AlertBubbleViewDirection) {
     AlertBubbleViewDirectionNone = 0,
     
-    AlertBubbleViewDirectionTop, // 优先顺序
+    AlertBubbleViewDirectionTop,
     AlertBubbleViewDirectionBottom,
     AlertBubbleViewDirectionLeft,
     AlertBubbleViewDirectionRight,

@@ -27,7 +27,7 @@
     self.title = @"警告框";
     self.alertBubbleTVColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.5];
     
-    NSArray * btTitleArray = @[@"左上", @"中间", @"右下"];
+    NSArray * btTitleArray = @[@"左上", @"中间", @"右下", @"左下"];
     for (int i = 0; i<btTitleArray.count; i++) {
         UIButton * oneBT = ({
             UIButton * button = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -47,6 +47,7 @@
             
             button;
         });
+        oneBT.tag = i;
         switch (i) {
             case 0: {
                 CGRect StatusRect = [[UIApplication sharedApplication] statusBarFrame];//标题栏
@@ -63,6 +64,10 @@
             }
             case 2: {
                 oneBT.frame = CGRectMake(self.view.frame.size.width - 100, self.view.frame.size.height - 64 -[UIDevice safeBottomMargin], 80, 44);
+                break;
+            }
+            case 3: {
+                oneBT.frame = CGRectMake(-35, self.view.frame.size.height - 64 -[UIDevice safeBottomMargin], 80, 44);
                 break;
             }
             default:
@@ -84,7 +89,8 @@
     //UIColor * ColorBlue1 = RGB16(0X4585F5);
     bt.tag ++;
     AlertBubbleViewDirection direction;
-    switch (bt.tag%4) {
+    NSArray * directionSortArray = @[];
+    switch (bt.tag) {
         case 0:
             direction = AlertBubbleViewDirectionTop;
             break;
@@ -96,6 +102,7 @@
             break;
         case 3:
             direction = AlertBubbleViewDirectionRight;
+            directionSortArray = @[@(AlertBubbleViewDirectionLeft), @(AlertBubbleViewDirectionTop), @(AlertBubbleViewDirectionBottom)];
             break;
         default:
             direction = AlertBubbleViewDirectionTop;
@@ -105,6 +112,7 @@
     NSString * text = @"0111111110,0222222220,0333333330,0444444440,0555555550,0666666660,0777777770,0888888880,0999999990";
     NSDictionary * dic = @{
                            @"direction":@(direction),
+                           @"directionSortArray":directionSortArray,
                            @"baseView":self.navigationController.view,
                            
                            @"borderLineColor":[UIColor blueColor],
