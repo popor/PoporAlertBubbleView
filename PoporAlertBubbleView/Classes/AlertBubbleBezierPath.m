@@ -7,7 +7,6 @@
 //
 
 #import "AlertBubbleBezierPath.h"
-#import <PoporUI/UIView+pExtension.h>
 
 @implementation AlertBubbleBezierPath
 
@@ -36,8 +35,8 @@
             }
             
             // 右越界 判断
-            if (triangleX > clipView.width - cornerRadius - triangleW -2) {
-                triangleX = clipView.width - cornerRadius - triangleW -2;
+            if (triangleX > clipView.frame.size.width - cornerRadius - triangleW -2) {
+                triangleX = clipView.frame.size.width - cornerRadius - triangleW -2;
             }
             
             break;
@@ -50,8 +49,8 @@
             }
             
             // 下越界 判断
-            if (triangleY > clipView.height -cornerRadius -triangleH -2) {
-                triangleY = clipView.height -cornerRadius -triangleH -2;
+            if (triangleY > clipView.frame.size.height -cornerRadius -triangleH -2) {
+                triangleY = clipView.frame.size.height -cornerRadius -triangleH -2;
             }
             break;
         }
@@ -71,8 +70,8 @@
              *   ❹*** **********❸
              *       v
              */
-            float maxX = clipView.width;
-            float maxH = clipView.height - triangleH;
+            float maxX = clipView.frame.size.width;
+            float maxH = clipView.frame.size.height - triangleH;
             
             // 第一个拐角
             [path moveToPoint:CGPointMake(0, cornerRadius)];
@@ -90,7 +89,7 @@
             // 第3个拐角到尖角
             [path addLineToPoint:CGPointMake(triangleX + triangleW, maxH)];
             
-            [path addLineToPoint:CGPointMake(triangleX, clipView.height)];
+            [path addLineToPoint:CGPointMake(triangleX, clipView.frame.size.height)];
             
             [path addLineToPoint:CGPointMake(triangleX - triangleW, maxH)];
             
@@ -114,9 +113,9 @@
              *   *              *
              *   ❹**************❸
              */
-            float maxX = clipView.width;
+            float maxX = clipView.frame.size.width;
             float minY = triangleH;
-            float maxH = clipView.height;// - triangleH
+            float maxH = clipView.frame.size.height;// - triangleH
             
             // 第一个拐角
             [path moveToPoint:CGPointMake(0, minY+cornerRadius)];
@@ -158,7 +157,7 @@
              *   *              *
              *   ❹**************❸
              */
-            float maxX = clipView.width - triangleW;
+            float maxX = clipView.frame.size.width - triangleW;
             // 第一个拐角
             [path moveToPoint:CGPointMake(0, cornerRadius)];
             [path addQuadCurveToPoint:CGPointMake(cornerRadius, 0)
@@ -169,17 +168,17 @@
                          controlPoint:CGPointMake(maxX, 0)];
             // 完整的尖角
             [path addLineToPoint:CGPointMake(maxX, triangleY - triangleH)];
-            [path addLineToPoint:CGPointMake(clipView.width, triangleY)];
+            [path addLineToPoint:CGPointMake(clipView.frame.size.width, triangleY)];
             [path addLineToPoint:CGPointMake(maxX, triangleY + triangleH)];
             
             // 第2个拐角到第3个
-            [path addLineToPoint:CGPointMake(maxX, clipView.height - cornerRadius)];
-            [path addQuadCurveToPoint:CGPointMake(maxX - cornerRadius, clipView.height)
-                         controlPoint:CGPointMake(maxX, clipView.height)];
+            [path addLineToPoint:CGPointMake(maxX, clipView.frame.size.height - cornerRadius)];
+            [path addQuadCurveToPoint:CGPointMake(maxX - cornerRadius, clipView.frame.size.height)
+                         controlPoint:CGPointMake(maxX, clipView.frame.size.height)];
             // 第3个拐角到第4个
-            [path addLineToPoint:CGPointMake(cornerRadius, clipView.height)];
-            [path addQuadCurveToPoint:CGPointMake(0, clipView.height - cornerRadius)
-                         controlPoint:CGPointMake(0, clipView.height)];
+            [path addLineToPoint:CGPointMake(cornerRadius, clipView.frame.size.height)];
+            [path addQuadCurveToPoint:CGPointMake(0, clipView.frame.size.height - cornerRadius)
+                         controlPoint:CGPointMake(0, clipView.frame.size.height)];
             // 收尾
             [path addLineToPoint:CGPointMake(0, cornerRadius)];
             break;
@@ -201,17 +200,17 @@
             [path addQuadCurveToPoint:CGPointMake(triangleW + cornerRadius, 0)
                          controlPoint:CGPointMake(triangleW, 0)];
             // 第1个拐角到第2个
-            [path addLineToPoint:CGPointMake(clipView.width - cornerRadius, 0)];
-            [path addQuadCurveToPoint:CGPointMake(clipView.width, cornerRadius)
-                         controlPoint:CGPointMake(clipView.width, 0)];
+            [path addLineToPoint:CGPointMake(clipView.frame.size.width - cornerRadius, 0)];
+            [path addQuadCurveToPoint:CGPointMake(clipView.frame.size.width, cornerRadius)
+                         controlPoint:CGPointMake(clipView.frame.size.width, 0)];
             // 第2个拐角到第3个
-            [path addLineToPoint:CGPointMake(clipView.width, clipView.height - cornerRadius)];
-            [path addQuadCurveToPoint:CGPointMake(clipView.width - cornerRadius, clipView.height)
-                         controlPoint:CGPointMake(clipView.width, clipView.height)];
+            [path addLineToPoint:CGPointMake(clipView.frame.size.width, clipView.frame.size.height - cornerRadius)];
+            [path addQuadCurveToPoint:CGPointMake(clipView.frame.size.width - cornerRadius, clipView.frame.size.height)
+                         controlPoint:CGPointMake(clipView.frame.size.width, clipView.frame.size.height)];
             // 第3个拐角到第4个
-            [path addLineToPoint:CGPointMake(triangleW + cornerRadius, clipView.height)];
-            [path addQuadCurveToPoint:CGPointMake(triangleW, clipView.height - cornerRadius)
-                         controlPoint:CGPointMake(triangleW, clipView.height)];
+            [path addLineToPoint:CGPointMake(triangleW + cornerRadius, clipView.frame.size.height)];
+            [path addQuadCurveToPoint:CGPointMake(triangleW, clipView.frame.size.height - cornerRadius)
+                         controlPoint:CGPointMake(triangleW, clipView.frame.size.height)];
             // 第4个拐角到拐角
             [path addLineToPoint:CGPointMake(triangleW, triangleY + triangleH)];
             [path addLineToPoint:CGPointMake(0, triangleY)];

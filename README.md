@@ -37,6 +37,9 @@ it, simply add the following line to your Podfile:
 pod 'PoporAlertBubbleView'
 ```
 
+1.02
+移除了其他的依赖pod
+
 ## Author
 
 popor, 908891024@qq.com

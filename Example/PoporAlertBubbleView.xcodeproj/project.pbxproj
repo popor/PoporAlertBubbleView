@@ -26,6 +26,7 @@
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
+		C3C4BC0E24F5047200FFB5B5 /* UIDevice+pScreenSize.m in Sources */ = {isa = PBXBuildFile; fileRef = C3C4BC0D24F5047200FFB5B5 /* UIDevice+pScreenSize.m */; };
 		DD417B934798C31350F48683 /* Pods_PoporAlertBubbleView_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EE68762CFE61512A429AA2C /* Pods_PoporAlertBubbleView_Tests.framework */; };
 /* End PBXBuildFile section */
 
@@ -73,6 +74,8 @@
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		8EE68762CFE61512A429AA2C /* Pods_PoporAlertBubbleView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PoporAlertBubbleView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A814440A1CEF1D57ED1A6125 /* Pods_PoporAlertBubbleView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PoporAlertBubbleView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3C4BC0C24F5047200FFB5B5 /* UIDevice+pScreenSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+pScreenSize.h"; sourceTree = "<group>"; };
+		C3C4BC0D24F5047200FFB5B5 /* UIDevice+pScreenSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+pScreenSize.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +163,8 @@
 		6003F593195388D20070C39A /* Example for PoporAlertBubbleView */ = {
 			isa = PBXGroup;
 			children = (
+				C3C4BC0C24F5047200FFB5B5 /* UIDevice+pScreenSize.h */,
+				C3C4BC0D24F5047200FFB5B5 /* UIDevice+pScreenSize.m */,
 				18617B992150FCD9008A5D96 /* other */,
 				6003F59C195388D20070C39A /* PoporAlertBubbleViewAppDelegate.h */,
 				6003F59D195388D20070C39A /* PoporAlertBubbleViewAppDelegate.m */,
@@ -352,14 +357,10 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-PoporAlertBubbleView_Example/Pods-PoporAlertBubbleView_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/PoporAlertBubbleView/PoporAlertBubbleView.framework",
-				"${BUILT_PRODUCTS_DIR}/PoporFoundation/PoporFoundation.framework",
-				"${BUILT_PRODUCTS_DIR}/PoporUI/PoporUI.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PoporAlertBubbleView.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PoporFoundation.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PoporUI.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -392,6 +393,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6003F59E195388D20070C39A /* PoporAlertBubbleViewAppDelegate.m in Sources */,
+				C3C4BC0E24F5047200FFB5B5 /* UIDevice+pScreenSize.m in Sources */,
 				6003F5A7195388D20070C39A /* PoporAlertBubbleViewViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);

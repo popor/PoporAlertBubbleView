@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
     s.name     = 'PoporAlertBubbleView'
-    s.version  = '1.01'
+    s.version  = '1.02'
     s.summary  = '类似iPhone 的 UIMenuController,将自定义view以气泡包围的方式展示出来,假如设置的方向不正确则自动使用其他方向.'
     
     s.homepage = 'https://github.com/popor/PoporAlertBubbleView'
@@ -18,8 +18,5 @@ Pod::Spec.new do |s|
     
     s.ios.deployment_target = '8.0'
     s.source_files = 'PoporAlertBubbleView/Classes/*.{h,m}'
-    
-    s.dependency 'PoporUI/UIView'
-    s.dependency 'PoporFoundation/NSAssistant'
     
 end

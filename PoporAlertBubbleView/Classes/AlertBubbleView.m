@@ -8,9 +8,8 @@
 
 #import "AlertBubbleView.h"
 
-#import "UIView+pTool.h"
 #import "AlertBubbleFrame.h"
-#import <PoporFoundation/NSAssistant.h>
+#import <objc/runtime.h>
 
 @interface AlertBubbleView () <UIGestureRecognizerDelegate>
 
@@ -20,7 +19,7 @@
 
 - (id)initWithDic:(NSDictionary *)dic {
     if (self = [super init]) {
-        [NSAssistant setEntity:self dic:dic];
+        [self setEntity:self dic:dic];
         if (!self.borderLineColor) {
             self.borderLineColor = [UIColor clearColor];
         }
@@ -30,14 +29,11 @@
         if (!self.bgColor) {
             self.bgColor = [UIColor clearColor];
         }
-        if (self.lableInnerGap != 0 && self.customeViewInnerGap == 0) {
-            self.customeViewInnerGap = self.lableInnerGap;
-        }
     }
     return self;
 }
 
-- (void)showCustomView:(UIView *)customeView around:(CGRect)aroundRect close:(BlockPVoid)close {
+- (void)showCustomView:(UIView *)customeView around:(CGRect)aroundRect close:(AlertBubbleViewBlockPVoid)close {
     {
         [self addSubview:self.bubbleView];
         self.customeView = customeView;
@@ -71,7 +67,7 @@
 /*
  自定义customeView的中心点, 这个不显示三角符号.
  */
-- (void)showCustomView:(UIView *)customeView close:(BlockPVoid)close {
+- (void)showCustomView:(UIView *)customeView close:(AlertBubbleViewBlockPVoid)close {
     {
         [self addSubview:self.bubbleView];
         self.customeView = customeView;
@@ -163,10 +159,11 @@
 }
 
 - (void)closeEvent {
+    [self removeFromSuperview];
+    
     if (self.closeBlock) {
         self.closeBlock();
     }
-    [UIView removeDestroyView:self];
 }
 
 // 测试使用模块
@@ -194,6 +191,63 @@
         _bubbleView = view;
     }
     return _bubbleView;
+}
+
+
+#pragma mark dic 映射数据
+- (void)setEntity:(id _Nullable)entity dic:(id _Nullable)dic {
+    if (!dic || !entity) {
+        return;
+    }
+    
+    unsigned propertyCount;
+    
+    objc_property_t *properties = class_copyPropertyList([entity class],&propertyCount);
+    for(int i=0;i<propertyCount;i++){
+        NSString * keySName;                              // key string  名字
+        NSString * keySAtt;                               // key string  属性
+        objc_property_t keyChar = properties[i];          // key Char 属性
+        const char *keyCName = property_getName(keyChar); // key Char 名字
+        keySName = [NSString stringWithCString:keyCName encoding:NSASCIIStringEncoding];
+        
+        @try {
+            [dic objectForKey:keySName];
+        }@catch (NSException * e) {
+            NSLog(@"设置VC属性时候,dic取值错误:%@\n\n\n", keySName);
+            continue;
+        }
+        
+        const char * keyCAtt = property_getAttributes(keyChar); // key Char 属性
+        keySAtt   = [NSString stringWithCString:keyCAtt encoding:NSASCIIStringEncoding];
+        id value = [dic objectForKey:keySName];
+        //NSLog(@"%s key:%@, value:%@", __func__, keySName, keySAtt);
+        
+        if (!value) continue;
+        
+        // 屏蔽系统参数
+        // nsobject 的 hash
+        if ([keySAtt hasPrefix:@"TQ,R"]) continue;
+        // nsobject 的 superclass
+        if ([keySAtt hasPrefix:@"T#,R"]) continue;
+        // nsobject 的 describe, debugDescription
+        if ([keySAtt hasPrefix:@"T@\"NSString\",R,C"]) continue;
+        
+        if ([keySAtt hasPrefix:@"Tc"]
+            || [keySAtt hasPrefix:@"Ti"]
+            || [keySAtt hasPrefix:@"TB"]) {
+            [entity setValue:[NSNumber numberWithInt:[value intValue]] forKey:keySName];
+            continue;
+        }
+        if ([keySAtt hasPrefix:@"Tf"]) {
+            [entity setValue:[NSNumber numberWithFloat:[value floatValue]] forKey:keySName];
+            continue;
+        }
+        // defalut
+        [entity setValue:value forKey:keySName];
+    }
+    free(properties);
+    
+    //NSLog(@"\n\n");
 }
 
 @end

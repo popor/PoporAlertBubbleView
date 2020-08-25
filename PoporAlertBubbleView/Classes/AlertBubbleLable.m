@@ -7,7 +7,6 @@
 //
 
 #import "AlertBubbleLable.h"
-#import <PoporUI/UIView+pExtension.h>
 
 @implementation AlertBubbleLable
 
@@ -28,7 +27,11 @@
     
     // 设配frame
     [textL sizeToFit];
-    textL.width = textWidth;
+    
+    CGRect frame = textL.frame;
+    frame.size.width = textWidth;
+    textL.frame = frame;
+    
     return textL;
 }
 

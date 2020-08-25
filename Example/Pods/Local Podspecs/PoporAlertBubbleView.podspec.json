@@ -1,6 +1,6 @@
 {
   "name": "PoporAlertBubbleView",
-  "version": "1.01",
+  "version": "1.02",
   "summary": "类似iPhone 的 UIMenuController,将自定义view以气泡包围的方式展示出来,假如设置的方向不正确则自动使用其他方向.",
   "homepage": "https://github.com/popor/PoporAlertBubbleView",
   "license": {
@@ -12,18 +12,10 @@
   },
   "source": {
     "git": "https://github.com/popor/PoporAlertBubbleView.git",
-    "tag": "1.01"
+    "tag": "1.02"
   },
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "PoporAlertBubbleView/Classes/*.{h,m}",
-  "dependencies": {
-    "PoporUI/UIView": [
-
-    ],
-    "PoporFoundation/NSAssistant": [
-
-    ]
-  }
+  "source_files": "PoporAlertBubbleView/Classes/*.{h,m}"
 }

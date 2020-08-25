@@ -1,40 +1,16 @@
 PODS:
-  - PoporAlertBubbleView (1.01):
-    - PoporFoundation/NSAssistant
-    - PoporUI/UIView
-  - PoporFoundation/NSAssistant (1.02):
-    - PoporFoundation/Os
-    - PoporFoundation/Prefix
-  - PoporFoundation/NSString (1.02):
-    - PoporFoundation/Os
-  - PoporFoundation/Os (1.02)
-  - PoporFoundation/Prefix (1.02):
-    - PoporFoundation/Os
-  - PoporUI/IToast (1.01):
-    - PoporFoundation/NSString
-  - PoporUI/UIDevice (1.01):
-    - PoporFoundation/NSString
-    - PoporUI/IToast
-  - PoporUI/UIView (1.01)
+  - PoporAlertBubbleView (1.02)
 
 DEPENDENCIES:
   - PoporAlertBubbleView (from `../`)
-  - PoporUI/UIDevice
-
-SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
-    - PoporFoundation
-    - PoporUI
 
 EXTERNAL SOURCES:
   PoporAlertBubbleView:
     :path: "../"
 
 SPEC CHECKSUMS:
-  PoporAlertBubbleView: f1b48e79767045630efd422eacefa24c0ce249c1
-  PoporFoundation: 3bc0abbb2bd3e13083558717185d67abeec25ab0
-  PoporUI: f6e8c424e4c59b489e9315e5116c9dd55f476df9
+  PoporAlertBubbleView: 8a02b8b3331534eef503adaa83f77f8867fb74a4
 
-PODFILE CHECKSUM: 58e935c1c6713843ea7943cf75b674bebb600543
+PODFILE CHECKSUM: 86931a859dc34d37fad3e1e1ca5e0c7cbc342105
 
-COCOAPODS: 1.7.5
+COCOAPODS: 1.10.0.beta.2

@@ -9,7 +9,7 @@
 #import "PoporAlertBubbleViewViewController.h"
 
 #import "AlertBubbleView.h"
-#import <PoporUI/UIDevice+pScreenSize.h>
+#import "UIDevice+pScreenSize.h"
 
 @interface PoporAlertBubbleViewViewController () <UITableViewDelegate, UITableViewDataSource>
 
@@ -27,7 +27,7 @@
     self.title = @"警告框";
     self.alertBubbleTVColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.5];
     
-    NSArray * btTitleArray = @[@"左上", @"中间", @"右下", @"左下", @"右上"];
+    NSArray * btTitleArray = @[@"左上", @"中间", @"右下"];
     for (int i = 0; i<btTitleArray.count; i++) {
         UIButton * oneBT = ({
             UIButton * button = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -47,16 +47,13 @@
             
             button;
         });
-        
-        CGRect StatusRect = [[UIApplication sharedApplication] statusBarFrame];//标题栏
-        CGRect NavRect    = self.navigationController.navigationBar.frame;//然后将高度相加，便可以动态计算顶部高度。
-        CGFloat height    = StatusRect.size.height + NavRect.size.height;
-        
-        oneBT.tag = i;
         switch (i) {
             case 0: {
-                //oneBT.frame = CGRectMake(20, height + 20, 80, 44);
-                oneBT.frame = CGRectMake(-60, height + 20, 80, 44);
+                CGRect StatusRect = [[UIApplication sharedApplication] statusBarFrame];//标题栏
+                CGRect NavRect    = self.navigationController.navigationBar.frame;//然后将高度相加，便可以动态计算顶部高度。
+                CGFloat height    = StatusRect.size.height + NavRect.size.height;
+                
+                oneBT.frame = CGRectMake(20, height + 20, 80, 44);
                 break;
             }
             case 1: {
@@ -64,19 +61,8 @@
                 oneBT.center = CGPointMake(self.view.frame.size.width/2, self.view.frame.size.height/2);
                 break;
             }
-            case 2: { //右下
-                //oneBT.frame = CGRectMake(self.view.frame.size.width - 100, self.view.frame.size.height - 64 -[UIDevice safeBottomMargin], 80, 44);
-                oneBT.frame = CGRectMake(self.view.frame.size.width - 100, self.view.frame.size.height - 30, 80, 44);
-                break;
-            }
-            case 3: { //左下
-                oneBT.frame = CGRectMake(-35, self.view.frame.size.height - 64 -[UIDevice safeBottomMargin], 80, 44);
-                //oneBT.frame = CGRectMake(0, self.view.frame.size.height -30, 80, 44);
-                break;
-            }
-            case 4:{
-                oneBT.frame = CGRectMake(self.view.frame.size.width -40, height +10, 80, 44);
-                
+            case 2: {
+                oneBT.frame = CGRectMake(self.view.frame.size.width - 100, self.view.frame.size.height - 64 -[UIDevice safeBottomMargin], 80, 44);
                 break;
             }
             default:
@@ -96,10 +82,9 @@
 
 - (void)btAction:(UIButton *)bt {
     //UIColor * ColorBlue1 = RGB16(0X4585F5);
+    bt.tag ++;
     AlertBubbleViewDirection direction;
-    NSArray * directionSortArray = @[];
-    UIView * baseView = self.navigationController.view;
-    switch (bt.tag) {
+    switch (bt.tag%4) {
         case 0:
             direction = AlertBubbleViewDirectionTop;
             break;
@@ -110,15 +95,7 @@
             direction = AlertBubbleViewDirectionLeft;
             break;
         case 3:
-            direction = AlertBubbleViewDirectionTop;
-            directionSortArray = @[@(AlertBubbleViewDirectionLeft), @(AlertBubbleViewDirectionTop), @(AlertBubbleViewDirectionBottom)];
-            break;
-        case 4:
-            //direction = AlertBubbleViewDirectionLeft;
-            direction = AlertBubbleViewDirectionBottom;
-            //directionSortArray = @[@(AlertBubbleViewDirectionLeft), @(AlertBubbleViewDirectionTop), @(AlertBubbleViewDirectionBottom)];
-            
-            baseView = self.view;
+            direction = AlertBubbleViewDirectionRight;
             break;
         default:
             direction = AlertBubbleViewDirectionTop;
@@ -126,29 +103,27 @@
     }
     //direction = AlertBubbleViewDirectionRight;
     NSString * text = @"0111111110,0222222220,0333333330,0444444440,0555555550,0666666660,0777777770,0888888880,0999999990";
-    NSDictionary * dic =
-    @{
-        @"direction":@(direction),
-        @"directionSortArray":directionSortArray,
-        @"baseView":baseView,
-        
-        @"borderLineColor":[UIColor blueColor],
-        @"borderLineWidth":@(1),
-        @"corner":@(5),
-        
-        @"trangleHeight":@(5),
-        @"trangleWidth":@(5),
-        
-        @"borderInnerGap":@(10),
-        @"customeViewInnerGap":@(5),
-        
-        @"bubbleBgColor":[UIColor lightGrayColor],
-        @"bgColor":[UIColor clearColor],
-        
-        // test
-        @"showAroundRect":@(NO),
-        @"showLogInfo":@(YES),
-    };
+    NSDictionary * dic = @{
+                           @"direction":@(direction),
+                           @"baseView":self.navigationController.view,
+                           
+                           @"borderLineColor":[UIColor blueColor],
+                           @"borderLineWidth":@(1),
+                           @"corner":@(5),
+                           
+                           @"trangleHeight":@(5),
+                           @"trangleWidth":@(5),
+                           
+                           @"borderInnerGap":@(10),
+                           @"customeViewInnerGap":@(5),
+                           
+                           @"bubbleBgColor":[UIColor lightGrayColor],
+                           @"bgColor":[UIColor clearColor],
+                           
+                           // test
+                           @"showAroundRect":@(NO),
+                           @"showLogInfo":@(YES),
+                           };
     
     AlertBubbleView * abView = [[AlertBubbleView alloc] initWithDic:dic];
     
