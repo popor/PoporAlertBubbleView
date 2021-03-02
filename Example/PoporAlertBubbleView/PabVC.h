@@ -8,6 +8,6 @@
 
 @import UIKit;
 
-@interface PoporAlertBubbleViewViewController : UIViewController
+@interface PabVC : UIViewController
 
 @end

@@ -20,24 +20,32 @@
     AlertBubbleViewDirection direction = abView.direction;
     NSArray * directionSortArray       = abView.directionSortArray;
     
-    CGFloat customeViewInnerGap = abView.customeViewInnerGap ;// lable insertEdge  gap
-    CGFloat miniGap             = abView.miniGap;// borderInnerGap + customeViewInnerGap
-    CGFloat borderInnerGap      = abView.borderInnerGap;// lable insertEdge  gap
-    CGFloat trangleHeight       = abView.trangleHeight;
+    CGFloat trangleWidth  = abView.trangleWidth;
+    CGFloat trangleHeight = abView.trangleHeight;
     
+    // t target 焦点rect
     CGFloat tX  = arroudRect.origin.x;
     CGFloat tY  = arroudRect.origin.y;
     CGFloat tW  = arroudRect.size.width;
     CGFloat tH  = arroudRect.size.height;
+    
+    // t c 焦点对应的custome rect
     CGFloat tCX = tX + tW/2;
     CGFloat tCY = tY + tH/2;
     
     __block CGRect  cRect;
     __block CGRect  bRect;
     __block CGPoint point;
-    __block float trangleX;
-    __block float trangleY;
+    __block float trangleX = 0;
+    __block float trangleY = 0;
     
+    UIEdgeInsets mixInset =
+    UIEdgeInsetsMake(abView.borderInset.top    +abView.customInset.top,
+                     abView.borderInset.left   +abView.customInset.left,
+                     abView.borderInset.bottom +abView.customInset.bottom,
+                     abView.borderInset.right  +abView.customInset.right);
+    
+    //....................................................................................
     BOOL (^ rectBlock)(AlertBubbleViewDirection) = ^(AlertBubbleViewDirection direction){
         switch (direction) {
             case AlertBubbleViewDirectionTop:{
@@ -49,11 +57,11 @@
                 break;
             }
             case AlertBubbleViewDirectionBottom:{
-                point = CGPointMake(tCX, tY+tH);
+                point = CGPointMake(tCX, tY +tH);
                 break;
             }
             case AlertBubbleViewDirectionRight:{
-                point = CGPointMake(tX+tW, tCY);
+                point = CGPointMake(tX +tW, tCY);
                 break;
             }
             default:{
@@ -66,12 +74,13 @@
         switch (direction) {
             case AlertBubbleViewDirectionTop:
             case AlertBubbleViewDirectionBottom:{
-                if (point.x - miniGap < customView.frame.size.width/2) {
+                
+                if (point.x - mixInset.left < customView.frame.size.width/2) {
                     // 左 越界
-                    trangleX = - (point.x - miniGap);
-                }else if(abView.frame.size.width - miniGap - point.x < customView.frame.size.width/2){
+                    trangleX = - (point.x - mixInset.left);
+                }else if(abView.frame.size.width -mixInset.right -point.x < customView.frame.size.width/2){
                     // 右 越界
-                    trangleX = - (customView.frame.size.width - (abView.frame.size.width - miniGap - point.x));
+                    trangleX = - (customView.frame.size.width - (abView.frame.size.width -mixInset.right -point.x));
                 }else{
                     trangleX = -customView.frame.size.width/2;
                 }
@@ -87,15 +96,15 @@
             }
             case AlertBubbleViewDirectionLeft:
             case AlertBubbleViewDirectionRight:{
-                if (point.y - miniGap < customView.frame.size.height/2) {
-                    // 上 越界
-                    trangleY = - (point.y - miniGap);
+                if (point.y -mixInset.top < customView.frame.size.height/2) { // 上 越界
+                    trangleY = - (point.y -mixInset.top);
                     
-                }else if (abView.frame.size.height - miniGap - point.y < customView.frame.size.height/2) {
-                    // 下 越界
-                    trangleY = - (customView.frame.size.height - (abView.frame.size.height - miniGap - point.y));
+                }else if (abView.frame.size.height -mixInset.bottom -point.y < customView.frame.size.height/2) { // 下 越界
+                    trangleY = - (customView.frame.size.height - (abView.frame.size.height -mixInset.bottom -point.y));
+                    
                 }else{
                     trangleY = -customView.frame.size.height/2;
+                    //trangleY = point.y;
                 }
                 // 赋值
                 if (direction == AlertBubbleViewDirectionLeft) {
@@ -112,54 +121,53 @@
             default:
                 break;
         }
-        // 目前bRect和cRect的super相同.
-        // 计算纠正bRect
-        bRect = CGRectInset(cRect, -customeViewInnerGap, -customeViewInnerGap);
+        
         switch (direction) {
+            case AlertBubbleViewDirectionTop: {
+                bRect = CGRectMake(cRect.origin.x    -abView.borderInset.left,
+                                   cRect.origin.y    -abView.borderInset.top  -trangleHeight,
+                                   cRect.size.width  +abView.borderInset.left +abView.borderInset.right,
+                                   cRect.size.height +abView.borderInset.top  +abView.borderInset.bottom +trangleHeight);
                 
-            case AlertBubbleViewDirectionLeft:{
-                bRect = CGRectMake(bRect.origin.x-customeViewInnerGap-trangleHeight, bRect.origin.y
-                                   , bRect.size.width + trangleHeight, bRect.size.height);
-                cRect  = CGRectOffset(cRect, -customeViewInnerGap-trangleHeight, 0);
+                cRect = CGRectMake(cRect.origin.x, cRect.origin.y -trangleHeight, cRect.size.width, cRect.size.height);
                 break;
             }
-            case AlertBubbleViewDirectionRight:{
-                bRect = CGRectMake(bRect.origin.x + customeViewInnerGap, bRect.origin.y
-                                   , bRect.size.width + trangleHeight, bRect.size.height);
-                cRect  = CGRectOffset(cRect, customeViewInnerGap+trangleHeight, 0);
+            case AlertBubbleViewDirectionBottom: {
+                bRect = CGRectMake(cRect.origin.x    -abView.borderInset.left,
+                                   cRect.origin.y    -abView.borderInset.top,
+                                   cRect.size.width  +abView.borderInset.left +abView.borderInset.right,
+                                   cRect.size.height +abView.borderInset.top  +abView.borderInset.bottom +trangleHeight);
+                
+                cRect = CGRectMake(cRect.origin.x, cRect.origin.y +trangleHeight, cRect.size.width, cRect.size.height);
                 break;
             }
-            case AlertBubbleViewDirectionTop:{
-                bRect = CGRectMake(bRect.origin.x, bRect.origin.y-customeViewInnerGap-trangleHeight
-                                   , bRect.size.width, bRect.size.height+trangleHeight);
-                cRect  = CGRectOffset(cRect, 0, -customeViewInnerGap-trangleHeight);
+            case AlertBubbleViewDirectionLeft: {
+                bRect = CGRectMake(cRect.origin.x    -abView.borderInset.left -trangleWidth,
+                                   cRect.origin.y    -abView.borderInset.top,
+                                   cRect.size.width  +abView.borderInset.left +abView.borderInset.right +trangleWidth,
+                                   cRect.size.height +abView.borderInset.top  +abView.borderInset.bottom);
+                
+                cRect = CGRectMake(cRect.origin.x -trangleWidth, cRect.origin.y, cRect.size.width, cRect.size.height);
                 break;
             }
-            case AlertBubbleViewDirectionBottom:{
-                bRect = CGRectMake(bRect.origin.x, bRect.origin.y + customeViewInnerGap
-                                   , bRect.size.width, bRect.size.height+trangleHeight);
-                cRect  = CGRectOffset(cRect, 0, customeViewInnerGap+trangleHeight);
+            case AlertBubbleViewDirectionRight: {
+                bRect = CGRectMake(cRect.origin.x    -abView.borderInset.left,
+                                   cRect.origin.y    -abView.borderInset.top,
+                                   cRect.size.width  +abView.borderInset.left +abView.borderInset.right +trangleWidth,
+                                   cRect.size.height +abView.borderInset.top  +abView.borderInset.bottom);
+                
+                cRect = CGRectMake(cRect.origin.x +trangleWidth, cRect.origin.y, cRect.size.width, cRect.size.height);
                 break;
             }
                 
-            default:{
+            default:
                 break;
-            }
         }
-        CGRect checkRect = CGRectInset(bRect, -borderInnerGap, -borderInnerGap);
-        if (CGRectContainsRect(abView.bounds, checkRect)) {
-            if (abView.showLogInfo) {
-                //NSLog(@"AlertBubbleView %@, 显示范围未越界.", ABDArray[direction]);
-            }
-            return YES;
-        }else{
-            if (abView.showLogInfo) {
-                NSLog(@"AlertBubbleView %@, 显示范围越界了, 可能是borderInnerGap过大或者其他问题.", ABDArray[direction]);
-            }
-            return NO;
-        }
+        
+        return [self checkAvaibleAbView:abView direction:direction bRect:bRect arroudRect:arroudRect];
     };
     
+    //....................................................................................
     // 假如发现异常,那么重新查找合适的方向
     if (!rectBlock(direction)) {
         BOOL ok = NO;
@@ -209,6 +217,97 @@
         abView.direction = direction;
         abView.trangleX  = trangleX;
         abView.trangleY  = trangleY;
+    }
+}
+
++ (BOOL)checkAvaibleAbView:(AlertBubbleView *)abView
+                 direction:(AlertBubbleViewDirection)direction
+                     bRect:(CGRect)bRect
+                arroudRect:(CGRect)arroudRect
+{
+    
+    UIEdgeInsets availableInset = abView.customInset;
+    CGRect availableRect =
+    CGRectMake(availableInset.left,      availableInset.top,
+               abView.frame.size.width  -availableInset.left -availableInset.right,
+               abView.frame.size.height -availableInset.top  -availableInset.bottom);
+    
+    //    NSLog(@"\n\ndirection: %li", direction);
+    //    NSLog(@"abView: %@", NSStringFromCGRect(abView.bounds));
+    //    NSLog(@"arroudRect: %@", NSStringFromCGRect(arroudRect));
+    //    NSLog(@"availableRect: %@", NSStringFromCGRect(availableRect));
+    //    NSLog(@"bRect: %@.", NSStringFromCGRect(bRect));
+    
+    
+    CGRect editBRect = CGRectInset(bRect, 0.1, 0.1); // 因为系统会给某个x,y,w,h, 增加0.000000012个单位. 导致判断失误.
+    
+    if (CGRectContainsRect(availableRect, editBRect)) {
+        if (abView.showLogInfo) {
+            //NSLog(@"AlertBubbleView %@, 显示范围未越界.", ABDArray[direction]);
+        }
+        switch (direction) {
+            case AlertBubbleViewDirectionTop:
+            case AlertBubbleViewDirectionBottom: {
+                if (CGRectGetMaxX(editBRect) < arroudRect.origin.x || editBRect.origin.x > CGRectGetMaxX(arroudRect) ) {
+                    return NO;
+                }
+                break;
+            }
+            case AlertBubbleViewDirectionLeft:
+            case AlertBubbleViewDirectionRight: {
+                if (CGRectGetMaxY(editBRect) < arroudRect.origin.y || editBRect.origin.y > CGRectGetMaxY(arroudRect) ) {
+                    return NO;
+                }
+                break;
+            }
+                
+            default:
+                break;
+        }
+        return YES;
+    }else{
+        if (abView.showLogInfo) {
+            NSLog(@"AlertBubbleView %@, 显示范围越界了, 可能是customInset过大或者其他问题.", ABDArray[direction]);
+            
+            //customView.alpha = 0.2;
+            //bubbleView.alpha = 0.2;
+            
+            // // 显示边界线
+            // UIView * colorView = ({
+            //     UIView * view = [UIView new];
+            //     view.frame             = editBRect;
+            //     view.backgroundColor   = UIColor.clearColor;
+            //     view.layer.borderWidth = 1;
+            //     view.userInteractionEnabled = NO;
+            //
+            //     [abView insertSubview:view atIndex:0];
+            //     view;
+            // });
+            //
+            // switch (direction) {
+            //     case AlertBubbleViewDirectionTop: {
+            //         colorView.layer.borderColor = UIColor.redColor.CGColor;
+            //         break;
+            //     }
+            //     case AlertBubbleViewDirectionBottom: {
+            //         colorView.layer.borderColor = UIColor.blueColor.CGColor;
+            //         break;
+            //     }
+            //     case AlertBubbleViewDirectionLeft: {
+            //         colorView.layer.borderColor = UIColor.brownColor.CGColor;
+            //         break;
+            //     }
+            //     case AlertBubbleViewDirectionRight: {
+            //         colorView.layer.borderColor = UIColor.blackColor.CGColor;
+            //         break;
+            //     }
+            //
+            //     default:
+            //         break;
+            // }
+            
+        }
+        return NO;
     }
 }
 

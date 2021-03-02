@@ -7,11 +7,11 @@
 //
 
 @import UIKit;
-#import "PoporAlertBubbleViewAppDelegate.h"
+#import "PabAppDelegate.h"
 
 int main(int argc, char * argv[])
 {
     @autoreleasepool {
-        return UIApplicationMain(argc, argv, nil, NSStringFromClass([PoporAlertBubbleViewAppDelegate class]));
+        return UIApplicationMain(argc, argv, nil, NSStringFromClass([PabAppDelegate class]));
     }
 }

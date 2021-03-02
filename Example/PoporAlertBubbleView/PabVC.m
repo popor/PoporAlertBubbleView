@@ -6,12 +6,14 @@
 //  Copyright (c) 2018 popor. All rights reserved.
 //
 
-#import "PoporAlertBubbleViewViewController.h"
+#import "PabVC.h"
 
 #import "AlertBubbleView.h"
 #import "UIDevice+pScreenSize.h"
 
-@interface PoporAlertBubbleViewViewController () <UITableViewDelegate, UITableViewDataSource>
+#define TestInset [NSValue valueWithUIEdgeInsets:UIEdgeInsetsMake(20, 20, 20, 20)]
+
+@interface PabVC () <UITableViewDelegate, UITableViewDataSource>
 
 @property (nonatomic, strong) AlertBubbleView * alertBubbleView;
 @property (nonatomic, strong) UITableView     * alertBubbleTV;
@@ -19,7 +21,7 @@
 
 @end
 
-@implementation PoporAlertBubbleViewViewController
+@implementation PabVC
 
 - (void)viewDidLoad
 {
@@ -114,8 +116,9 @@
                            @"trangleHeight":@(5),
                            @"trangleWidth":@(5),
                            
-                           @"borderInnerGap":@(10),
-                           @"customeViewInnerGap":@(5),
+                           @"customInset":TestInset,
+                           //@"borderInset":[NSValue valueWithUIEdgeInsets:UIEdgeInsetsMake(20, 20, 20, 20)],
+                           @"borderInset":[NSValue valueWithUIEdgeInsets:UIEdgeInsetsMake(5, 5, 5, 5)],
                            
                            @"bubbleBgColor":[UIColor lightGrayColor],
                            @"bgColor":[UIColor clearColor],
@@ -183,8 +186,7 @@
                            @"trangleHeight":@(8),
                            @"trangleWidth":@(8),
                            
-                           @"borderInnerGap":@(10),
-                           @"customeViewInnerGap":@(0),
+                           @"customInset":TestInset,
                            
                            @"bubbleBgColor":self.alertBubbleTVColor,
                            @"bgColor":[UIColor clearColor],

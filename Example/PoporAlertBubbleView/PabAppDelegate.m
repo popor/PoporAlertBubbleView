@@ -6,9 +6,9 @@
 //  Copyright (c) 2018 popor. All rights reserved.
 //
 
-#import "PoporAlertBubbleViewAppDelegate.h"
+#import "PabAppDelegate.h"
 
-@implementation PoporAlertBubbleViewAppDelegate
+@implementation PabAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {

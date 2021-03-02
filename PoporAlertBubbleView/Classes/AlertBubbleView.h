@@ -26,11 +26,9 @@ typedef void(^AlertBubbleViewBlockPVoid)(void); // __BlockTypedef
 @property (nonatomic        ) float                     trangleWidth;
 @property (nonatomic        ) float                     trangleHeight;// 三角的高度
 
-// AlertBubbleView距离baseView边界的 insertEdge gap, 防止AlertBubbleView紧紧贴边显示.
-@property (nonatomic        ) float                     borderInnerGap;
+@property (nonatomic        ) UIEdgeInsets              customInset; // custom距离baseView的inset
+@property (nonatomic        ) UIEdgeInsets              borderInset; // custom距离border的inset
 
-// customeView距离AlertBubbleView边界的insertEdge gap, 防止customeView紧紧贴AlertBubbleView显示
-@property (nonatomic        ) float                     customeViewInnerGap;
 
 @property (nonatomic, weak  ) UIView                    * baseView;
 
@@ -41,7 +39,6 @@ typedef void(^AlertBubbleViewBlockPVoid)(void); // __BlockTypedef
 @property (nonatomic        ) CGFloat                   showBgColorAnimationTime;
 
 // --- 内部不可设置参数
-@property (nonatomic        ) float                     miniGap;// borderInnerGap + customeViewInnerGap
 @property (nonatomic        ) float                     trangleX;
 @property (nonatomic        ) float                     trangleY;
 @property (nonatomic, copy  ) AlertBubbleViewBlockPVoid closeBlock;

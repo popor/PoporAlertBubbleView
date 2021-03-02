@@ -8,7 +8,7 @@
 
 @import UIKit;
 
-@interface PoporAlertBubbleViewAppDelegate : UIResponder <UIApplicationDelegate>
+@interface PabAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 

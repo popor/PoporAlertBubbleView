@@ -55,9 +55,6 @@
         self.closeTapGR.delegate = self;
         
         [self addGestureRecognizer:self.closeTapGR];
-        
-        // 矫正必要数据.
-        self.miniGap = self.borderInnerGap + self.customeViewInnerGap;
     }
     
     [self showTargetView];
@@ -84,9 +81,6 @@
         self.closeTapGR.delegate = self;
         
         [self addGestureRecognizer:self.closeTapGR];
-        
-        // 矫正必要数据.
-        self.miniGap = self.borderInnerGap + self.customeViewInnerGap;
     }
     
     [self showTargetView];
@@ -104,8 +98,8 @@
     path = [AlertBubbleBezierPath pathAtClipView:self.bubbleView
                                        direction:self.direction
                                            scale:1.0
-                                       triangleX:-(self.trangleX-self.customeViewInnerGap)
-                                       triangleY:-(self.trangleY-self.customeViewInnerGap)
+                                       triangleX:-self.trangleX
+                                       triangleY:-self.trangleY
                                        triangleW:self.trangleWidth
                                        triangleH:self.trangleHeight
                                     cornerRadius:self.corner];
@@ -218,9 +212,9 @@
         }
         
         const char * keyCAtt = property_getAttributes(keyChar); // key Char 属性
-        keySAtt   = [NSString stringWithCString:keyCAtt encoding:NSASCIIStringEncoding];
+        keySAtt  = [NSString stringWithCString:keyCAtt encoding:NSASCIIStringEncoding];
         id value = [dic objectForKey:keySName];
-        //NSLog(@"%s key:%@, value:%@", __func__, keySName, keySAtt);
+       // NSLog(@"%s key:%@, value:%@", __func__, keySName, keySAtt);
         
         if (!value) continue;
         
